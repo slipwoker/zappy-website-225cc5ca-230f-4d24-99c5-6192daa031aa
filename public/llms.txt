@@ -7,41 +7,41 @@
 ## Pages
 
 ### בית
-https://-225cc5ca.zappy5.app
+https://example.com
 צללו לחוויה בלתי נשכחת עם מורה דרך מוסמך בעל ניסיון של 20 שנה. סיורים, טקסים והרצאות שמחברים אתכם לעומק התרבותי של ירושלים. הזמינו את המסע שלכם עוד היום!
 
 ### סיורים
-https://-225cc5ca.zappy5.app/tours
+https://example.com/tours
 הצטרפו לסיורי עומק חווייתיים בירושלים, מהעיר העתיקה ועד הר הזיתים. כל מסלול נארג בתשוקה לחשוף רבדים נסתרים של תרבות ואמונה. בואו לחוות את העיר מחדש!
 
 ### טקסים והרצאות
-https://-225cc5ca.zappy5.app/ceremonies-lectures
+https://example.com/ceremonies-lectures
 גלו את עומק המסורת בטקס האפיפאנייה המרגש או בהרצאות מרתקות על קהילת ביתא ישראל. חוויה לימודית ורוחנית המשלבת ידע נדיר עם חיבור אישי. הצטרפו למסע יוצא דופן!
 
 ### אודות
-https://-225cc5ca.zappy5.app/about
+https://example.com/about
 מורה דרך מוסמך עם מעל 20 שנות ניסיון, המשלב ידע מעמיק עם תשוקה אמיתית לחשוף את נשמת ירושלים. קראו על הסיפור האישי שמאחורי המסעות הבלתי נשכחים שלנו.
 
 ### צור קשר
-https://-225cc5ca.zappy5.app/contact
+https://example.com/contact
 מוכנים לצאת להרפתקה תרבותית עמוקה? צרו קשר עוד היום כדי לתכנן סיור מותאם אישית, להזמין הרצאה או להשתתף בטקס ייחודי. אנחנו כאן כדי להגשים את חלום ירושלים שלכם!
 
 ### תודה שפניתם אלינו
-https://-225cc5ca.zappy5.app/thank-you
+https://example.com/thank-you
 חלום ירושלים - תודה שפניתם אלינו
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://-225cc5ca.zappy5.app/privacy
+https://example.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://-225cc5ca.zappy5.app/terms
+https://example.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://-225cc5ca.zappy5.app/accessibility
+https://example.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -51,8 +51,8 @@ Information about WCAG compliance and accessibility features.
 - (No contact details configured yet.)
 
 ### Contact form
-- URL: https://-225cc5ca.zappy5.app/contact
-- Endpoint: https://-225cc5ca.zappy5.app/api/email/contact-form
+- URL: https://example.com/contact
+- Endpoint: https://example.com/api/email/contact-form
 - Method: POST
 - Content-Type: application/json
 - Fields:
@@ -89,6 +89,6 @@ Tourism & Guided Tours
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://-225cc5ca.zappy5.app/sitemap.xml
-- Robots: https://-225cc5ca.zappy5.app/robots.txt
-- Flattened page text (for LLMs): https://-225cc5ca.zappy5.app/llms-full.txt
+- Sitemap (XML): https://example.com/sitemap.xml
+- Robots: https://example.com/robots.txt
+- Flattened page text (for LLMs): https://example.com/llms-full.txt
