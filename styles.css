@@ -1,4 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+/* Zappy custom media fonts:start */
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/* Zappy custom media fonts:end */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* Self-hosted fonts (Inter + Rubik for multi-language support) */
 
@@ -119,10 +153,10 @@
   --text-color: #4A4A4A;
   --text-secondary-color: #707070;
 
-  --body-font: 'Alef', sans-serif;
-  --font-family: 'Alef', sans-serif;
-  --font-primary: 'Alef', sans-serif;
-  --font-body: 'Alef', sans-serif;
+  --body-font: 'Inter', sans-serif;
+  --font-family: 'Inter', sans-serif;
+  --font-primary: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
   --heading-font: 'Georgia', sans-serif;
   --font-heading: 'Georgia', sans-serif;}
 
@@ -145,7 +179,7 @@ html {
 body {
   font-size: 16px !important;
   line-height: 1.7 !important;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--text-dark);
   background-color: var(--bg-light);
   -webkit-font-smoothing: antialiased;
@@ -292,7 +326,7 @@ a:hover {
   transition: var(--transition-hover);
   cursor: pointer;
   border: 2px solid transparent;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -1147,7 +1181,7 @@ html[lang="ar"] .nav-right-group .nav-menu {
   background: none;
   border: none;
   cursor: pointer;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   display: inline-flex;
@@ -1994,7 +2028,7 @@ main:not(.courses-page-main) { margin-top: 0 !important; padding-top: 0 !importa
   
   background-color: var(--footer-bg);
   color: var(--footer-text);
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.7;
   padding-top: 3.5rem;
   position: relative;
@@ -2493,7 +2527,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-hero-section .hero-headline {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
@@ -2504,7 +2538,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-hero-section .hero-subtitle {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.375rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2684,7 +2718,7 @@ main { flex: 1 0 auto; }
     letter-spacing: 0;
     line-height: 1.2;
     color: var(--text-dark);
-    font-family: 'Alef', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 24px;
     text-align: start;
 }
@@ -2694,7 +2728,7 @@ main { flex: 1 0 auto; }
     font-weight: 400;
     line-height: 1.75;
     color: #A3342A;
-    font-family: 'Alef', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: start;
     max-width: 480px;
 }
@@ -2773,7 +2807,7 @@ main { flex: 1 0 auto; }
     font-weight: 700;
     line-height: 1.3;
     color: var(--text-dark);
-    font-family: 'Alef', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 8px;
     text-align: start;
 }
@@ -2783,7 +2817,7 @@ main { flex: 1 0 auto; }
     font-weight: 400;
     line-height: 1.75;
     color: #A3342A;
-    font-family: 'Alef', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: start;
 }
 
@@ -2924,7 +2958,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-services-preview-section .section-header p {
-    font-family: 'Alef', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75;
@@ -3019,7 +3053,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-services-preview-section .tile-content p {
-    font-family: 'Alef', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75;
@@ -3055,7 +3089,7 @@ main { flex: 1 0 auto; }
     border: none;
     font-weight: 700;
     font-size: 1rem;
-    font-family: 'Alef', sans-serif;
+    font-family: 'Inter', sans-serif;
     letter-spacing: 0.5px;
     cursor: pointer;
     text-decoration: none;
@@ -3141,7 +3175,7 @@ main { flex: 1 0 auto; }
   background-color: var(--bg-light);
   color: var(--text-dark);
   direction: rtl;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   padding-top: 96px;
   padding-inline: 16px;
 }
@@ -3162,7 +3196,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-showcase-section__title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -3466,7 +3500,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-cta-section .cta-prompt-text {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   line-height: 1.7;
   color: var(--text-light);
@@ -3490,7 +3524,7 @@ main { flex: 1 0 auto; }
   justify-content: center;
   background: var(--accent);
   color: #FFFFFF;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.03em;
@@ -3516,7 +3550,7 @@ main { flex: 1 0 auto; }
   justify-content: center;
   background: transparent;
   color: var(--text-light);
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.03em;
@@ -3693,7 +3727,7 @@ main { flex: 1 0 auto; }
 
 /* Title */
 .tours-page-intro-section__title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
@@ -3721,7 +3755,7 @@ main { flex: 1 0 auto; }
 
 /* Description */
 .tours-page-intro-section__description {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -3836,7 +3870,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-programs-section__title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -3846,7 +3880,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-programs-section__subtitle {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--text-muted);
@@ -3917,7 +3951,7 @@ main { flex: 1 0 auto; }
   inset-inline-end: 16px;
   background: var(--accent);
   color: #FFFFFF;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   width: 44px;
@@ -3940,7 +3974,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-programs-section__card-title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.3;
@@ -3949,7 +3983,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-programs-section__card-audience {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.875rem;
   line-height: 1.6;
   color: var(--secondary);
@@ -3958,7 +3992,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-programs-section__card-description {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -3968,7 +4002,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-programs-section__card-link {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 600;
   color: var(--primary);
@@ -3998,7 +4032,7 @@ main { flex: 1 0 auto; }
   border: none;
   font-weight: 700;
   font-size: 1rem;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   letter-spacing: 0.5px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -4119,7 +4153,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-experience-flow-section__title {
-    font-family: 'Alef', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 2.25rem;
     font-weight: 700;
     line-height: 1.2;
@@ -4129,7 +4163,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-experience-flow-section__subtitle {
-    font-family: 'Alef', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text-light);
@@ -4186,7 +4220,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-experience-flow-section__step-number {
-    font-family: 'Alef', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 1;
@@ -4212,7 +4246,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-experience-flow-section__step-title {
-    font-family: 'Alef', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.3;
@@ -4221,7 +4255,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-experience-flow-section__step-text {
-    font-family: 'Alef', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75;
@@ -4350,7 +4384,7 @@ main { flex: 1 0 auto; }
   padding: var(--spacing-section, 96px) 16px;
   position: relative;
   overflow: visible;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   direction: rtl;
   text-align: right;
 }
@@ -4374,7 +4408,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-audience-fit-section__heading {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -4446,7 +4480,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-audience-fit-section__audience-title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.3;
@@ -4651,7 +4685,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-inquiry-band-section__heading {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -4661,7 +4695,7 @@ main { flex: 1 0 auto; }
 }
 
 .tours-inquiry-band-section__description {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -4677,7 +4711,7 @@ main { flex: 1 0 auto; }
   gap: 10px;
   background: var(--accent);
   color: var(--text-dark);
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -4803,7 +4837,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-editorial-intro-section .section-label {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -4813,7 +4847,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-editorial-intro-section .editorial-headline {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
@@ -4833,7 +4867,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-editorial-intro-section .editorial-pullquote {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.8;
@@ -4843,7 +4877,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-editorial-intro-section .editorial-body {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -4874,7 +4908,7 @@ main { flex: 1 0 auto; }
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .ceremonies-lectures-editorial-intro-section .btn-primary:hover {
@@ -4895,7 +4929,7 @@ main { flex: 1 0 auto; }
   font-size: 1rem;
   text-decoration: underline;
   cursor: pointer;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   transition: all 0.3s ease;
 }
 
@@ -5101,7 +5135,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-ceremonial-participation-section__title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -5119,7 +5153,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-ceremonial-participation-section__subtitle {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--text-muted);
@@ -5202,7 +5236,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-ceremonial-participation-section__island .island-title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.3;
@@ -5211,7 +5245,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-ceremonial-participation-section__island .island-text {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -5237,7 +5271,7 @@ main { flex: 1 0 auto; }
   letter-spacing: 0.5px;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
@@ -5390,7 +5424,7 @@ main { flex: 1 0 auto; }
   font-weight: 400;
   line-height: 1.75;
   color: var(--text-muted);
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .ceremonies-lectures-lecture-topics-section .topics-grid {
@@ -5433,7 +5467,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-lecture-topics-section .card-number {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1;
@@ -5463,7 +5497,7 @@ main { flex: 1 0 auto; }
   font-weight: 400;
   line-height: 1.75;
   color: var(--text-muted);
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .ceremonies-lectures-lecture-topics-section .decorative-stamp {
@@ -5566,7 +5600,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-credibility-section .credibility-heading {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -5577,7 +5611,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-credibility-section .credibility-subheading {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -5659,7 +5693,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-credibility-section .credibility-card-title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.3;
@@ -5669,7 +5703,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-credibility-section .credibility-card-text {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -5760,7 +5794,7 @@ main { flex: 1 0 auto; }
   color: var(--text-dark);
   padding: 96px 16px;
   direction: rtl;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .ceremonies-lectures-contact-prompt-section .clcp-container {
@@ -5782,7 +5816,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-contact-prompt-section .clcp-heading {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -5816,7 +5850,7 @@ main { flex: 1 0 auto; }
 }
 
 .ceremonies-lectures-contact-prompt-section .clcp-invitation {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.8;
@@ -5840,7 +5874,7 @@ main { flex: 1 0 auto; }
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   box-shadow: 0 4px 20px rgba(44, 24, 16, 0.1);
   position: relative;
   z-index: 3;
@@ -6012,7 +6046,7 @@ main { flex: 1 0 auto; }
 }
 
 .about-story-section__headline {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.75rem;
   font-weight: 700;
   line-height: 1.2;
@@ -6029,7 +6063,7 @@ main { flex: 1 0 auto; }
 }
 
 .about-story-section__body-text {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--text-muted);
@@ -6048,7 +6082,7 @@ main { flex: 1 0 auto; }
 
 .about-story-section__signature-name {
   display: block;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -6057,7 +6091,7 @@ main { flex: 1 0 auto; }
 
 .about-story-section__signature-title {
   display: block;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   color: var(--text-muted);
@@ -6286,7 +6320,7 @@ main { flex: 1 0 auto; }
 }
 
 .about-values-section__title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -6312,7 +6346,7 @@ main { flex: 1 0 auto; }
 }
 
 .about-values-section__subtitle {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.8;
@@ -6386,7 +6420,7 @@ main { flex: 1 0 auto; }
 
 /* Card title */
 .about-values-section__card-title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.3;
@@ -6397,7 +6431,7 @@ main { flex: 1 0 auto; }
 
 /* Card text */
 .about-values-section__card-text {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -6471,7 +6505,7 @@ main { flex: 1 0 auto; }
   background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C8963E' fill-opacity='0.05'%3E%3Cpath d='M30 0 L60 30 L30 60 L0 30 Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   color: var(--text-dark);
   padding: 96px 16px;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .about-timeline-section__inner {
@@ -6487,7 +6521,7 @@ main { flex: 1 0 auto; }
 }
 
 .about-timeline-section__title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -6558,7 +6592,7 @@ main { flex: 1 0 auto; }
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent) 0%, #74251E 100%);
   color: #FFFFFF;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
   box-shadow: 0 4px 20px rgba(44,24,16,0.2), 0 0 0 6px rgba(212,168,83,0.25);
@@ -6604,7 +6638,7 @@ main { flex: 1 0 auto; }
 }
 
 .about-timeline-section__milestone-title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.3;
@@ -6643,7 +6677,7 @@ main { flex: 1 0 auto; }
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px rgba(44,24,16,0.1);
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .about-timeline-section__cta-btn:hover {
@@ -6786,7 +6820,7 @@ main { flex: 1 0 auto; }
 }
 
 .about-personal-approach-headline {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.5;
@@ -6807,7 +6841,7 @@ main { flex: 1 0 auto; }
 }
 
 .about-personal-approach-p {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.8;
@@ -6852,7 +6886,7 @@ main { flex: 1 0 auto; }
 }
 
 .about-personal-approach-caption {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.6;
@@ -7004,7 +7038,7 @@ main { flex: 1 0 auto; }
   display: inline-block;
   background: var(--accent);
   color: var(--bg-dark);
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -7103,7 +7137,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-contact-intro-section__title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
@@ -7114,7 +7148,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-contact-intro-section__subtitle {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -7222,7 +7256,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-contact-form-section__form-title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.3;
@@ -7234,7 +7268,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-contact-form-section__form-subtitle {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   line-height: 1.7;
   color: var(--text-muted);
@@ -7260,7 +7294,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-contact-form-section__label {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--text-dark);
@@ -7269,7 +7303,7 @@ main { flex: 1 0 auto; }
 
 .contact-contact-form-section__input,
 .contact-contact-form-section__textarea {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   padding: 14px 16px;
   background: #FFFFFF;
@@ -7308,7 +7342,7 @@ main { flex: 1 0 auto; }
   flex-direction: row;
   align-items: flex-start;
   gap: 10px;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
   color: var(--text-dark);
@@ -7335,7 +7369,7 @@ main { flex: 1 0 auto; }
   padding: 16px 32px;
   border-radius: var(--radius-btn, 6px);
   border: none;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -7369,7 +7403,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-contact-form-section__guidance-title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.3;
@@ -7378,7 +7412,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-contact-form-section__guidance-text {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   line-height: 1.7;
   color: var(--text-dark);
@@ -7399,7 +7433,7 @@ main { flex: 1 0 auto; }
   flex-direction: row;
   align-items: flex-start;
   gap: 12px;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: var(--text-dark);
@@ -7427,7 +7461,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-contact-form-section__response-title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -7435,7 +7469,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-contact-form-section__response-text {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   line-height: 1.7;
   color: var(--text-dark);
@@ -7468,7 +7502,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-contact-form-section__detail-link {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
   color: var(--primary);
   text-decoration: none;
@@ -7557,7 +7591,7 @@ main { flex: 1 0 auto; }
   letter-spacing: 0;
   line-height: 1.2;
   color: var(--text-light);
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin-bottom: 16px;
 }
 
@@ -7565,7 +7599,7 @@ main { flex: 1 0 auto; }
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--text-light);
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin-bottom: 24px;
   opacity: 0.85;
 }
@@ -7638,7 +7672,7 @@ main { flex: 1 0 auto; }
   font-weight: 700;
   line-height: 1.3;
   color: var(--text-light);
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin-bottom: 16px;
   position: relative;
   z-index: 2;
@@ -7650,7 +7684,7 @@ main { flex: 1 0 auto; }
   font-weight: 400;
   line-height: 1.75;
   color: var(--text-light);
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin-bottom: 24px;
   flex-grow: 1;
   opacity: 0.85;
@@ -7673,7 +7707,7 @@ main { flex: 1 0 auto; }
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--accent);
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   background: rgba(214, 162, 58, 0.1);
   border: 1px solid rgba(214, 162, 58, 0.25);
   border-radius: var(--radius-badge);
@@ -7701,7 +7735,7 @@ main { flex: 1 0 auto; }
   letter-spacing: 0.03em;
   cursor: pointer;
   text-decoration: none;
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   transition: all 0.3s ease;
   box-shadow: var(--shadow-subtle);
 }
@@ -7827,7 +7861,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-expectations-section__title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.3;
@@ -7837,7 +7871,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-expectations-section__subtitle {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
@@ -7915,7 +7949,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-expectations-section__item-title {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.375rem;
   font-weight: 500;
   line-height: 1.4;
@@ -7924,7 +7958,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-expectations-section__item-text {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
@@ -7951,7 +7985,7 @@ main { flex: 1 0 auto; }
 }
 
 .contact-expectations-section__reassurance {
-  font-family: 'Alef', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.8;
@@ -8039,7 +8073,7 @@ main { flex: 1 0 auto; }
 
 /* Global font override - exclude icon fonts and special elements */
 *:not(.fas):not(.far):not(.fab):not(.fa):not([class*="fa-"]):not(.iconify):not([class*="icon"]):not(code):not(pre):not(i[class*="fa"]) {
-  font-family: 'Alef', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
 }
 
 
