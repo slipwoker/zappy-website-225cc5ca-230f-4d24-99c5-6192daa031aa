@@ -9030,6 +9030,17 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   background-color: var(--bg-light);
 }
 
+
+.home-layout-section .home-layout-section__tours-heading {
+  font-family: 'Frank Ruhl Libre', 'Noto Serif Hebrew', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2C1810;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
