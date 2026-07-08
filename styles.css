@@ -9087,6 +9087,10 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .home-layout-section .home-layout-section__title-row { gap: 16px !important; }
 .home-layout-section .home-layout-section__title-ornament { width: 160px !important; }
 
+
+.index-hero-section .index-hero-divider-wrapper svg path[fill="#F5EFE0"] {
+  fill: #E8DCC8;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
