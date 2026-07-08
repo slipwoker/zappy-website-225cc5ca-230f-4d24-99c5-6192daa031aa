@@ -446,6 +446,289 @@
 }
 
 </style>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-services-preview-section {
+  background-color: var(--bg-dark);
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(214, 162, 58, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 85% 80%, rgba(49, 92, 140, 0.1) 0%, transparent 50%),
+    linear-gradient(180deg, #2B2118 0%, #1F1810 100%);
+  color: var(--text-light);
+  padding: 80px 16px;
+  position: relative;
+  overflow: hidden;
+  direction: rtl;
+  text-align: right;
+}
+
+.index-services-preview-section .services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+/* Section Header */
+.index-services-preview-section .services-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.index-services-preview-section .services-title {
+  font-family: 'Frank Ruhl Libre', 'Noto Serif Hebrew', serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-light);
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.index-services-preview-section .services-ornamental-divider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.index-services-preview-section .services-ornamental-divider svg {
+  width: 200px;
+  height: 20px;
+}
+
+.index-services-preview-section .services-subtitle {
+  font-family: 'Assistant', 'Noto Sans Hebrew', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--text-light);
+  opacity: 0.85;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Services Grid */
+.index-services-preview-section .services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  direction: rtl;
+  margin-bottom: 48px;
+}
+
+/* Service Card */
+.index-services-preview-section .service-card {
+  background: rgba(245, 239, 224, 0.06);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  border: 1px solid rgba(214, 162, 58, 0.15);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.index-services-preview-section .service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(214, 162, 58, 0.3);
+}
+
+.index-services-preview-section .card-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
+.index-services-preview-section .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.index-services-preview-section .service-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.index-services-preview-section .card-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(43, 33, 24, 0.1) 0%, rgba(43, 33, 24, 0.6) 100%);
+  z-index: 2;
+}
+
+.index-services-preview-section .card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.index-services-preview-section .card-title {
+  font-family: 'Frank Ruhl Libre', 'Noto Serif Hebrew', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-light);
+  margin: 0 0 12px 0;
+}
+
+.index-services-preview-section .card-accent-line {
+  width: 40px;
+  height: 3px;
+  background-color: var(--accent);
+  margin-bottom: 16px;
+  border-radius: 2px;
+  opacity: 0.8;
+  align-self: flex-start;
+}
+
+.index-services-preview-section .card-description {
+  font-family: 'Assistant', 'Noto Sans Hebrew', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--text-light);
+  opacity: 0.8;
+  margin: 0 0 20px 0;
+  flex-grow: 1;
+}
+
+.index-services-preview-section .card-link {
+  font-family: 'Assistant', 'Noto Sans Hebrew', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.3s ease, opacity 0.3s ease;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.index-services-preview-section .card-link:hover {
+  opacity: 0.8;
+  gap: 8px;
+}
+
+/* Bottom CTA */
+.index-services-preview-section .services-cta-wrapper {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.index-services-preview-section .services-main-cta {
+  background: var(--accent);
+  color: #FFFFFF;
+  padding: 14px 32px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(214, 162, 58, 0.3);
+}
+
+.index-services-preview-section .services-main-cta:hover {
+  background: #c8942e;
+  box-shadow: 0 6px 20px rgba(214, 162, 58, 0.5);
+}
+
+/* Decorative Background Motifs */
+.index-services-preview-section .services-bg-decor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.index-services-preview-section .city-sketch-overlay {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 320px;
+  height: 400px;
+  opacity: 0.6;
+}
+
+.index-services-preview-section .stamp-circle-overlay {
+  position: absolute;
+  bottom: 8%;
+  right: 3%;
+  width: 120px;
+  height: 120px;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .index-services-preview-section {
+    padding: 60px 16px;
+  }
+
+  .index-services-preview-section .services-title {
+    font-size: 1.8rem;
+  }
+
+  .index-services-preview-section .services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px;
+  }
+
+  .index-services-preview-section .card-content {
+    padding: 20px;
+  }
+
+  .index-services-preview-section .card-title {
+    font-size: 1.3rem;
+  }
+
+  .index-services-preview-section .city-sketch-overlay {
+    width: 200px;
+    height: 250px;
+    top: 5%;
+    left: -5%;
+    opacity: 0.4;
+  }
+
+  .index-services-preview-section .stamp-circle-overlay {
+    width: 80px;
+    height: 80px;
+    bottom: 5%;
+    right: 0%;
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .index-services-preview-section .services-grid {
+    gap: 24px;
+  }
+}
+/* ZAPPY_POSTGEN_GUARD_SECTION_HEADER:בית-services-preview */
+[data-layout-spec="בית-services-preview"] > header {
+  max-width: min(92vw, 60ch) !important;
+  margin-inline: auto !important;
+  padding-inline: 16px;
+  text-align: center !important;
+}
+[data-layout-spec="בית-services-preview"] > header > * { margin-inline: auto !important; max-width: 100% !important; }
+
+</style>
     <link rel="stylesheet" href="/styles.css">
     <script>window.ZAPPY_WEBSITE_ID = "225cc5ca-230f-4d24-99c5-6192daa031aa"; window.ZAPPY_API_BASE = "https://api.zappy5.com";</script>
     <link rel="preload" as="image" href="/assets/business-general-hero-upload-1783069055003-a39iow.webp?v=1783069058308" fetchpriority="high">
@@ -1073,7 +1356,7 @@
       </p>
       <p class="home-layout-section__about-text" style="text-align: center;"><b>
         שמי רחל אפרסמון</b>, מורת דרך מוסמכת ומדריכה בירושלים מעל 20 שנה, בהם מוזיאון מגדל דוד, מנהרות הכותל, בית שמואל, כנס ישראל, אשת טורס ומגוון סוכנויות וחברות פרטיות, אנשי עסקים, צליינים ומשפחות. אני שמחה להציע מבחר סיורי עומק חווייתיים המשלבים ביקורים באתרי קדושה, השתתפות בטקסים, תצפיות, הדרכות, הרצאות, הליכה והתבוננות ביופייה, ייחודה, קדושתה, אנשיה, נופייה וסיפורה הייחודי של ירושלים.
-      </p><div class="zappy-inserted-element" id="zappy-element-1783524347813-hghri4bh1" data-element-id="zappy-element-1783524347813-hghri4bh1" data-element-type="h2" style="width: 100%;"><h2 class="font-bold" data-element-type="h2" data-element-id="zappy-element-1783524347813-hghri4bh1" id="zappy-element-1783524347813-hghri4bh1" style="text-align: center;">הסיורים שלנו</h2></div>
+      </p><div class="zappy-inserted-element" id="zappy-element-1783524347813-hghri4bh1" data-element-id="zappy-element-1783524347813-hghri4bh1" data-element-type="h2" style="width: 100%;"><h2 class="font-bold" data-element-type="h2" data-element-id="zappy-element-1783524347813-hghri4bh1" id="zappy-element-1783524347813-hghri4bh1" style="text-align: center;">סיורים&nbsp;</h2></div>
 
     </div>
 
@@ -1280,138 +1563,106 @@
 
 
 
-<section data-band-index="2" class="index-services-preview-section" data-layout-spec="בית-services-preview" id="index-services-preview-section">
-    <div class="services-container">
-        <!-- Section Header -->
-        <div class="section-header">
-            <h2 ><p ><b style="color: rgb(245, 237, 224); font-size: 15px; letter-spacing: 0px;"><span style="font-size:26px" ;="">"חלום ירושלים"</span></b></p><p dir="rtl" >
-<span style="font-size:15px" ;=""> </span></p></h2><h3 ><span style="font-size: 15px;" ;=""></span><span style="color: rgb(229, 229, 229) !important;"><span style="font-size: 15px;" ;="">מחלום יעקב</span><span style="font-weight: normal; font-size: 15px;" ;=""> שחלם על </span><span style="font-weight: normal; font-size: 15px;" ;="">סולם</span><span style="font-weight: normal; font-size: 15px;" ;=""> המחבר בין </span><span style="font-size: 15px;" ;="">שמים וארץ</span></span><br><span style="color: rgb(229, 229, 229) !important;"><span style="font-size: 15px;" ;=""></span><span style="font-weight: normal; font-size: 15px;" ;="">ועד </span><span style="font-size: 18px;" ;="">לחלום ירושלים</span><span style="font-weight: normal; font-size: 15px;" ;=""> ששכן בלב </span><span style="font-size: 15px;" ;="">מאמינים, הוגים, מתפללים, עולי רגל, צליינים, חוקרים, סופרים</span><span style="font-size: 15px;" ;=""> </span><span style="font-size: 15px;" ;="">ומשוררים</span><span style="font-size: 15px;" ;="">,&nbsp;</span></span><br><span style="color: rgb(229, 229, 229) !important;"><span style="font-weight: normal; font-size: 15px;" ;=""> ירושלים תמיד היתה אבן </span><span style="font-size: 15px; font-weight: normal;" ;="">שואבת</span><span style="font-weight: normal; font-size: 15px;" ;="">,&nbsp;</span><span style="font-size: 15px;" ;="">כח</span><span style="font-weight: normal; font-size: 15px;" ;=""> </span><span style="font-size: 15px;" ;="">משיכה</span></span><br><span style="color: rgb(229, 229, 229) !important;"><span style="font-size: 15px;" ;=""> </span><span style="font-size: 15px;" ;="">ומקום</span><span style="font-weight: normal; font-size: 15px;" ;=""> המחבר עליונים ותחתונים,&nbsp;</span><span style="font-size: 15px;" ;="">דתות </span><span style="font-size: 15px;" ;="">ואמונות</span><span style="font-size: 15px;" ;="">,&nbsp; מנהגים ותפיסות.&nbsp;</span></span><span style="font-size: 15px;" ;=""></span></h3><!--/data/user/0/com.samsung.android.app.notes/files/clipdata/clipdata_bodytext_260703_131440_765.sdocx-->
-            <div class="gold-divider">
-                <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 200 20" width="256" height="256" xmlns="http://www.w3.org/2000/svg" data-element-id="zappy-temp-icon-1783073690214-6c3o9zl1d" style="color: rgb(214, 162, 58); width: 256px !important; height: 256px !important;" data-size-adjusted="true">
-                    <line x1="0" y1="10" x2="85" y2="10" stroke="var(--accent)" stroke-width="1" opacity="0.6"></line>
-                    <polygon points="100,2 108,10 100,18 92,10" fill="var(--accent)" opacity="0.8"></polygon>
-                    <line x1="115" y1="10" x2="200" y2="10" stroke="var(--accent)" stroke-width="1" opacity="0.6"></line>
-                </svg>
-            </div>
-            
-        </div>
-
-        <!-- Services Grid -->
-        <div class="services-grid zappy-preserve-css-grid" data-original-item-width="584" data-original-gap="32px" style="display: grid; --zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); align-items: stretch !important;" data-zappy-explicit-columns="true">
-            
-            <!-- Tile 1: Ceremonial -->
-            <article class="service-tile tile-ceremonial" data-grid-item-index="0" style="overflow: hidden !important;">
-                <div class="tile-image-wrapper">
-                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1782991245909-7rzgfbaut" data-element-type="image" data-zappy-zoom-wrapper-width="351px" data-zappy-zoom-wrapper-height="262px" data-zappy-zoom-wrapper-width-mode="card-slot" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 100% !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 262px !important; display: block !important; max-height: none !important; padding-bottom: 0px !important; min-height: 0px !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img decoding="async" data-placeholder="index-services-preview-image-1" data-context="A warm, atmospheric photo of a Jewish ceremony in Jerusalem, featuring candles, traditional garments, and ancient stone textures, shot with shallow depth of field in golden hour light" width="600" height="400" src="/assets/site-index-services-preview-image-1-1783073083402-89m7u4.webp?v=1783073085954" alt="טקס מרגש בירושלים" data-element-type="image" data-element-id="img-1782991245909-7rzgfbaut" style="object-position: 50% 50% !important; width: 100% !important; height: 100% !important; object-fit: cover !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important; position: absolute !important;" data-zappy-original-width="350.5777893066406" data-zappy-original-height="261.6166687011719" data-zappy-object-position="50% 50%" data-zappy-zoom="1"></div>
-                    <div class="image-overlay ceremonial-overlay"></div>
-                </div>
-                <div class="tile-content">
-                    <h3 ><p style="text-align: center;">'<b>חלום ירושלים'</b> נולד מתוך <b>תשוקה</b> לעיר הזו<br>&nbsp;בה חלקיקי האוויר <b>המדבריים</b> מתערבבים עם אלה <b>המגיעים מהים</b> ויחד יוצרים כאן  <b>מרחב</b> <b>ייחודי</b> וחד פעמי המפגיש את המבקר עם<br>&nbsp;<b>אמונות, מסורות,  רגשות, יצרים,&nbsp; תחושות ותפילות.</b><br><br><br><br><br><br><br>&nbsp;&nbsp;</p></h3>
-                    
-                    <div class="tile-accent-line"></div>
-                </div>
-            </article>
-
-            <!-- Tile 2: Urban & Historical -->
-            <article class="service-tile tile-urban" data-grid-item-index="1" style="overflow: hidden !important;">
-                <div class="tile-image-wrapper">
-                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1782991245909-0nmw3vz7u" data-element-type="image" data-zappy-zoom-wrapper-width="351px" data-zappy-zoom-wrapper-height="262px" data-zappy-zoom-wrapper-width-mode="card-slot" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 100% !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 262px !important; display: block !important; max-height: none !important; padding-bottom: 0px !important; min-height: 0px !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img decoding="async" data-placeholder="index-services-preview-image-2" data-context="A striking street-level view of the Old City of Jerusalem, with narrow stone alleyways, arched doorways, and a distant view of the Dome of the Rock, captured in dramatic morning light" width="600" height="400" src="/assets/site-index-services-preview-image-2-1783073130249-c9vh77.webp?v=1783073132952" alt="העיר העתיקה ירושלים" data-element-type="image" data-element-id="img-1782991245909-0nmw3vz7u" style="object-position: 50% 50% !important; width: 100% !important; height: 100% !important; object-fit: cover !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important; position: absolute !important;" data-zappy-original-width="350.5777893066406" data-zappy-original-height="261.6166687011719" data-zappy-object-position="50% 50%" data-zappy-zoom="1"></div>
-                    <div class="image-overlay urban-overlay"></div>
-                </div>
-                <div class="tile-content">
-                    <h3 ><p dir="rtl" style="text-align: center;"><span style="font-size:15px" ;=""><b style="font-size: 1rem; letter-spacing: -0.02em;"><span style="font-size:15px" ;="">שמי רחל אפרסמון, מורת דרך מווסמכת ומדריכה בירושלים מעל 20 שנה, בהם מוזיאון מגדל דוד, מנהרות הכותל,&nbsp; בית שמואל, כנס ישראל, אשת טורס&nbsp; ומגוון סוכניות וחברות פרטיות, אנשי עסקים, צליינים ומשפחות.</span></b></span><br><span style="font-size:15px" ;=""><b style="font-size: 1rem; letter-spacing: -0.02em;"><span style="font-size:15px" ;=""><br></span></b></span><br><span style="font-size:15px" ;="">אני&nbsp;</span>שמחה להציע  מבחר <b>סיורי עומק חווייתיים</b> המשלבים ביקורים <b>באתרי קדושה</b>, <b>השתתפות</b> <b>בטקסים</b>,  <b>תצפיות</b>, <b>הדרכות</b>, <b>הרצאות</b>,&nbsp;<br>הליכה <b>והתבוננות  ביופייה, ייחודה, קדושתה,</b> <b>אנשיה, נופייה וסיפורה הייחודי של ירושלים.</b><br><!--/data/user/0/com.samsung.android.app.notes/files/clipdata/clipdata_bodytext_260702_143838_695.sdocx--></p></h3>
-                    
-                    <div class="tile-accent-line"></div>
-                </div>
-            </article>
-
-            <!-- Tile 3: Corporate & Refined -->
-            <article class="service-tile tile-corporate" data-grid-item-index="2">
-                <div class="tile-image-wrapper">
-                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1782991245909-gwty7f1fb" data-element-type="image" data-zappy-zoom-wrapper-width="368px" data-zappy-zoom-wrapper-height="275px" data-zappy-zoom-wrapper-width-mode="card-slot" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 100% !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 275px !important; display: block !important; max-height: none !important; padding-bottom: 0px !important; min-height: 0px !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img decoding="async" data-placeholder="index-services-preview-image-3" data-context="A professional business delegation standing in an archaeological garden in Jerusalem, listening to a guide, with modern city backdrop blending ancient and contemporary" width="600" height="400" src="/assets/site-index-services-preview-image-3-1783073173605-q295r6.webp?v=1783073175926" alt="משלחת עסקית בירושלים" data-element-type="image" data-element-id="img-1782991245909-gwty7f1fb" style="object-position: 50% 33% !important; margin: 0px !important; left: -2.5% !important; top: -74.8759% !important; width: 105% !important; height: 326.897% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important; position: absolute !important;" data-zappy-zoom="1.05" data-zappy-original-width="350.5777893066406" data-zappy-original-height="261.977783203125" data-zappy-object-position="50% 33%"></div>
-                    <div class="image-overlay corporate-overlay"></div>
-                </div>
-                <div class="tile-content">
-                    
-                    <p style="text-align: center;"><br>&nbsp;<b style="font-size: 18px;">קדושת ירושלים לשלוש הדתות</b></p><p dir="rtl"><span style="font-size:15px" ;="">נפתח בתצפית <b>מרהיבה</b> המשקיפה מרום</span></p><p dir="rtl"><span style="font-size:15px" ;=""><b>&nbsp;הר הזיתים</b> אל עבר <b>העיר העתיקה, </b>אל </span><span style="font-size:15px" ;="">מבני <b>הקדושה</b> שלה, <b>בתי התפילה</b>,&nbsp; <b>צריחיה</b>, <b>מגדליה</b> <b>וחומותיה</b> המקיפות אותה ויוצרות את</span></p><p dir="rtl"><span style="font-size:15px" ;="">&nbsp;<b>ה'אגן הקדוש'</b> הנמצא בליבותיהם של <b>יותר ממחצית אוכלוסיית העולם!</b></span>
-</p><p><span ;="" style="font-size: 15px;">נדבר על התהליך בו <b>התקדשה</b> ירושלים <b>לשלוש</b> הדתות המונותיאיסטיות-</span><span ;="" style="font-size: 15px;">&nbsp; </span><span ;="" style="font-size: 15px;"><b>היהדות, הנצרות והאסלאם. נשמע על </b></span><b><span ;="" style="font-size: 15px;">הארועים, </span><span ;="" style="font-size: 15px;">המסורות, </span><span ;="" style="font-size: 15px;">המנהגים, ה</span></b><span ;="" style="font-size: 15px;"><b>תפיסות , המסעות, הכיבושים, </b></span><span ;="" style="font-size: 15px;"><b>הטקסטים ו</b></span><span ;="" style="font-size: 15px;"><b>השירים שעיצבו את עולמם של מיליוני מאמינים ברחבי העולם.</b></span></p>
-                    <div class="tile-accent-line"></div>
-                </div>
-            </article>
-
-            <!-- Tile 4: Educational -->
-            <article class="service-tile tile-educational" data-grid-item-index="3" style="overflow: hidden !important;">
-                <div class="tile-image-wrapper">
-                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1782991245909-opo8844nf" data-element-type="image" data-zappy-zoom-wrapper-width="351px" data-zappy-zoom-wrapper-height="262px" data-zappy-zoom-wrapper-width-mode="card-slot" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 100% !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 262px !important; display: block !important; max-height: none !important; padding-bottom: 0px !important; min-height: 0px !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img decoding="async" data-placeholder="index-services-preview-image-4" data-context="An intimate lecture setting in a library with ancient books, maps of Jerusalem spread on a wooden table, and warm ambient lighting creating a scholarly atmosphere" width="600" height="400" src="/assets/site-index-services-preview-image-4-1783150594102-jxa7z8.webp?v=1783150596583" alt="הרצאה על ירושלים" data-element-type="image" data-element-id="img-1782991245909-opo8844nf" style="object-position: 50% 50% !important; width: 100% !important; height: 100% !important; object-fit: cover !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important; position: absolute !important;" data-zappy-original-width="350.5777893066406" data-zappy-original-height="261.6166687011719" data-zappy-object-position="50% 50%" data-zappy-zoom="1"></div>
-                    <div class="image-overlay educational-overlay"></div>
-                </div>
-                <div class="tile-content">
-                    <h3 ><p dir="rtl" ><span style="font-size:15px" ;=""></span></p><p dir="rtl" ><span style="font-size:15px" ;=""><span style="font-size:18px" ;=""><b>התקדשות&nbsp; ירושלים ביהדות</b></span></span><br>
-<span style="font-size:15px" ;="">נצא לסיור בעקבות הארועים והתפיסות המכוננות אשר עיצבו את </span><span style="font-size:15px" ;=""><b>קדושת ירושלים</b></span><span style="font-size:15px" ;=""> בליבם של יהודים בכל תפוצות ישראל לאורך הדורות.</span><br>
-<span style="font-size:15px" ;=""><b>עקדת יצחק</b></span><span style="font-size:15px" ;=""> </span><span style="font-size:15px" ;=""><b>והר המורייה</b></span><span style="font-size:15px" ;="">, </span><span style="font-size:15px" ;=""><b>עיר דוד</b></span><span style="font-size:15px" ;=""> </span><span style="font-size:15px" ;=""><b>ומקדש שלמה</b></span><span style="font-size:15px" ;=""><b>, מקדש הורדוס וחווית העלייה לרגל, חורבן ירושלים ובית המקדש, חווית הגלות </b></span><span style="font-size:15px" ;="">וירושלים בעת החדשה. </span><br>
-<span style="font-size:15px" ;=""><b>אפשרויות:</b></span><br>
-<span style="font-size:15px" ;=""><b>● סיור בעיר דוד</b></span><span style="font-size:15px" ;="">- הגרעין הקדום של ירושלים, כולל תצפית, סרט והליכה&nbsp; במי נקבת השילוח.</span><br>
-<span style="font-size:15px" ;=""><b>● סיור במתחם הר הבית</b></span><span style="font-size:15px" ;=""> ומקום בית המקדש.</span><br>
-</p></h3><h3><span style="font-size:15px" ;="">● ביקור </span><span style="font-size:15px" ;=""><b>בכותל </b></span><span style="font-size:15px" ;="">ומשמעותו וקדושתו לעם היהודי.</span></h3>
-<p><span style="font-size:15px" ;="">● </span><span style="font-size:15px" ;=""><b>סיור במרכז דוידסון</b></span><span style="font-size:15px" ;=""> - חווית העלייה לרגל בזמן בית המקדש השני , סיור בגן הארכיאולוגי המשמר את מדרגות ושערי הכניסה הקדומים להר הבית.</span><br>
-<span style="font-size:15px" ;="">● סיור </span><span style="font-size:15px" ;=""><b>במנהרות הכותל המערבי.</b></span><br></p><!--/data/user/0/com.samsung.android.app.notes/files/clipdata/clipdata_bodytext_260704_103720_464.sdocx--><p><span ;="" style="letter-spacing: -0.02em;">● ביקור בבית כנסת '</span><span ;="" style="letter-spacing: -0.02em;"><b>החורבה' ע'ש&nbsp;&nbsp;</b></span><span ;="" style="letter-spacing: -0.02em;">ר' יהודה החסיד המספר את סיפורוהתיישבותם של היהודים בירושלים בעת החדשה.</span><br><span style="letter-spacing: -0.3072px;"><br></span></p><p dir="rtl"><b><span style="font-size:18px" ;="">התקדשות ירושלים בנצרות</span></b><br>
-<span style="font-size:15px" ;="">נצא לסיור בעקבות <b>ה</b></span><span style="font-size:15px" ;=""><b>שבוע האחרון</b> בחיי&nbsp; ישוע, <b>השבוע הקדוש</b>- <b>SEMANA</b> <b>SANCTA</b>, בו ארעו&nbsp; הארועים אשר עיצבו את קדושתה של ירושלים והפכו אותה <b>ל'עיר הקדושה'</b> ואבן שואבת עבור מיליארדי נוצרים מאמינים ברחבי העולם המבקשים להגיע לכאן <b>וללכת בעקבותיו של ישוע.</b></span><br>
-<span style="font-size:15px" ;="">לאחר התצפית נ</span><span style="font-size:15px" ;="">רד <b>במורד הר הזיתים</b> ונבקר <b>בכנסיות</b> המתארות את ימיו האחרונים.</span><br>
-<span style="font-size:15px" ;="">ניכנס אל <b>תוך חומות העיר</b> ונלך לאורך תחנות</span><br>
-<span style="font-size:15px" ;=""><b>ה'ויה דולורוזה'</b>- <b>"דרך הייסורים</b>", בה הלך ישוע כשהוא נושא את הצלב על גבו&nbsp; עד <b>לצליבתו,</b> <b>קבורתו</b> <b>ותחייתו</b>.</span><br>
-<span style="font-size:15px" ;="">נספרעל <b>עלייתו של ישוע לשמים</b> ועל&nbsp; </span><span style="font-size:15px" ;="">ראשוני&nbsp; קהילת <b>'מאמיני ישוע'</b> שהפכו לכנסייה הראשונה בעולם.</span><br>
-<span style="font-size:15px" ;="">אפשרויות:</span><br>
-<span style="font-size:15px" ;="">ביקור </span><span style="font-size:15px" ;=""><b>בכנסיית הקבר- מקום הצליבה, הקבורה והתחייה.</b></span><br>
-<span style="font-size:15px" ;=""><b>ביקור ב</b></span><span style="font-size:15px" ;=""> </span><span style="font-size:15px" ;=""><b>'הר ציון'</b></span><span style="font-size:15px" ;=""> וחדר '</span><span style="font-size:15px" ;=""><b>הסעודה</b></span><span style="font-size:15px" ;=""> </span><span style="font-size:15px" ;=""><b>האחרונה'.</b></span><br>
-<span style="font-size:15px" ;=""><b>ביקור בכנסיית הדורמיציון- מקום תרדמת מרים, אם ישוע.</b></span><br>
-<span style="font-size:15px" ;=""><b>ביקור בקבר מרים</b></span><span style="font-size:15px" ;=""> בנחל הקדרון.</span><!--/data/user/0/com.samsung.android.app.notes/files/clipdata/clipdata_bodytext_260704_105830_903.sdocx--></p><p dir="rtl"><span style="font-size:15px" ;=""><span style="font-size:18px" ;=""><b>התקדשות ירושלים לאיסלאם</b></span></span>
-</p><p dir="rtl" ><span style="font-size:15px" ;="">נספר על התקדשות ירושלים לעולם המוסלמי.</span><br>
-<span style="font-size:15px" ;="">על </span><span style="font-size:15px" ;=""><b>מחמד- אחרון הנביאים</b></span><span style="font-size:15px" ;="">,&nbsp; על </span><span style="font-size:15px" ;=""><b>מסע הלילה</b></span><span style="font-size:15px" ;=""> שלו לירושלים </span><span style="font-size:15px" ;=""><b>ועלייתו לשמים</b></span><span style="font-size:15px" ;="">.&nbsp; על כיבוש ירושלים והקמת מבני הקדושה על הר הבית. על </span><span style="font-size:15px" ;=""><b>חמשת עמודי האסלאם,&nbsp; הסונה והשיעה</b></span><span style="font-size:15px" ;="">.</span><br><br>
-<span style="font-size:15px" ;="">ביקור </span><span style="font-size:15px" ;=""><b>במתחם הר הבית</b></span><span style="font-size:15px" ;=""> - חראם אל-שריף, </span><span style="font-size:15px" ;="">ה</span><span style="font-size:15px" ;="">נחשב לשלישי בקדושתו לאיסלאם.</span><br>
-<span style="font-size:15px" ;=""><span ;="">נראה מקרוב את מבנה </span></span><span style="font-size:15px" ;=""><b>כיפת</b></span><span style="font-size:15px" ;=""> </span><span style="font-size:15px" ;=""><b>הסלע המרהיב ביופיו</b></span><span style="font-size:15px" ;=""> </span><span style="font-size:15px" ;=""><b>ואת מסגד אל- אקצה, נלך ברחבת הר הבית ונתרשם מהמבנים המוסלמים שנבנו על ההר לאורך התקופות.</b></span><br>
-<span style="font-size:15px" ;=""><b>נצא דרך שערי הר הבית אל השווקים והרחובות המקיפים את המתחם ומספרים את סיפורה של ירושלים בתקופה המוסלמית.</b></span><br>
-<!--/data/user/0/com.samsung.android.app.notes/files/clipdata/clipdata_bodytext_260704_110751_446.sdocx--></p><span ;="" style="letter-spacing: -0.02em;"><br></span><!--/data/user/0/com.samsung.android.app.notes/files/clipdata/clipdata_bodytext_260703_130720_720.sdocx-->
-                    
-                    <div class="tile-accent-line"></div>
-                </div>
-            </article>
-
-        </div>
-
-        <!-- CTA -->
-        <div class="cta-wrapper">
-            <a href="/tours" class="btn-primary-arrow" data-element-type="button" data-element-id="btn-1782991245899-5b4e383s9" data-native-element="true">
-                לכל הסיורים והחוויות
-                <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 4 L18 10 L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M18 10 L2 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-                </svg>
-            </a>
-        </div>
-    </div>
-
-    <!-- Bottom Divider: Dramatic Diagonal Stone-Texture Clip-Path -->
-    <div class="services-divider-wrapper" data-no-icon-edit="true" aria-hidden="true">
-        <svg viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <pattern id="stone-texture" patternUnits="userSpaceOnUse" width="40" height="40">
-                    <path d="M0,20 L10,15 L20,22 L30,18 L40,20 L40,40 L0,40 Z" fill="var(--bg-dark)" opacity="0.4"></path>
-                    <path d="M5,35 L15,30 L25,36 L35,32 L40,35" stroke="var(--accent)" stroke-width="0.5" fill="var(--bg-dark)" opacity="0.3"></path>
-                </pattern>
-            </defs>
-            <!-- Main diagonal clip -->
-            <path d="M0,100 L0,30 L300,55 L600,20 L900,60 L1200,15 L1200,100 Z" fill="var(--bg-dark)"></path>
-            <!-- Stone texture overlay -->
-            <path d="M0,100 L0,30 L300,55 L600,20 L900,60 L1200,15 L1200,100 Z" fill="var(--bg-dark)"></path>
-            <!-- Parchment chips / small geometric fragments -->
-            <polygon points="100,45 120,40 115,55" fill="var(--accent)" opacity="0.25"></polygon>
-            <polygon points="450,38 470,30 480,42 460,48" fill="var(--accent)" opacity="0.2"></polygon>
-            <polygon points="750,50 770,45 765,58 745,55" fill="var(--accent)" opacity="0.3"></polygon>
-            <polygon points="1050,35 1070,28 1080,40 1060,45" fill="var(--accent)" opacity="0.2"></polygon>
-            <!-- Gold accent stroke along the edge -->
-            <path d="M0,30 L300,55 L600,20 L900,60 L1200,15" stroke="var(--accent)" stroke-width="2" fill="var(--bg-dark)" opacity="0.6"></path>
+<section class="index-services-preview-section" data-layout-spec="בית-services-preview" dir="rtl" id="index-services-preview-section">
+  <div class="services-container">
+    <!-- Section Header with Ornamental Divider -->
+    <header class="services-header">
+      <h2 class="services-title">המסעות שלנו</h2>
+      <div class="services-ornamental-divider" aria-hidden="true">
+        <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" data-no-icon-edit="true" aria-hidden="true">
+          <line x1="0" y1="10" x2="85" y2="10" stroke="var(--accent)" stroke-width="1" opacity="0.6"></line>
+          <polygon points="100,4 108,10 100,16 92,10" fill="var(--accent)" opacity="0.8"></polygon>
+          <line x1="115" y1="10" x2="200" y2="10" stroke="var(--accent)" stroke-width="1" opacity="0.6"></line>
         </svg>
+      </div>
+      <p class="services-subtitle">חוויות עומק בירושלים והסביבה, מותאמות אישית לכל קבוצה ומטייל</p>
+    </header>
+
+    <!-- Services Grid 2x2 -->
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <article class="service-card">
+        <div class="card-image-wrapper">
+          <img data-context="A guided walking tour through the narrow stone alleys of the Old City of Jerusalem, sunlight filtering through ancient archways, a small group of tourists listening intently to a guide holding a map, warm golden hour lighting, professional tourism photography" width="600" height="400" src="/assets/tourism-guided-tours-section-בית-services-preview-index-services-preview-image-1.webp" alt="סיור מודרך בסמטאות העיר העתיקה" class="card-image">
+          <div class="card-image-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">סיורי עומק בעיר העתיקה</h3>
+          <div class="card-accent-line" aria-hidden="true"></div>
+          <p class="card-description">צעדו בעקבות דורות של צליינים, מלכים וסוחרים. סיור חווייתי בן 3 שעות החושף את רבדיה הנסתרים של ירושלים, מסמטאות הרובע היהודי ועד לשווקים הצבעוניים של הרובע המוסלמי.</p>
+          <a href="#" class="card-link">קראו עוד ←</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="service-card">
+        <div class="card-image-wrapper">
+          <img data-context="A Bar or Bat Mitzvah ceremony at the Western Wall plaza at sunrise, a young person holding a Torah scroll surrounded by family, the ancient stones glowing golden in the morning light, emotional and celebratory atmosphere, professional event photography" width="600" height="400" src="/assets/tourism-guided-tours-section-בית-services-preview-index-services-preview-image-2.webp" alt="טקס בר מצווה מרגש ברחבת הכותל" class="card-image">
+          <div class="card-image-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">טקסים ואירועים משפחתיים</h3>
+          <div class="card-accent-line" aria-hidden="true"></div>
+          <p class="card-description">הפכו רגעים משמעותיים לבלתי נשכחים. ליווי צמוד והפקה של טקסי בר/בת מצווה, חתונות סמליות וחגיגות משפחתיות באתרים הקסומים ביותר בירושלים, עם נגיעה אישית וחגיגית.</p>
+          <a href="#" class="card-link">קראו עוד ←</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="service-card">
+        <div class="card-image-wrapper">
+          <img data-context="A knowledgeable guide giving a lecture in a cozy Jerusalem stone hall, a large projected map of ancient Israel on the wall, an engaged audience of adults sitting in rows, warm ambient lighting, educational and intimate atmosphere" width="600" height="400" src="/assets/tourism-guided-tours-section-בית-services-preview-index-services-preview-image-3.webp" alt="הרצאה מרתקת על היסטוריה של ירושלים" class="card-image">
+          <div class="card-image-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">הרצאות וחוויות תוכן</h3>
+          <div class="card-accent-line" aria-hidden="true"></div>
+          <p class="card-description">מפגשי העשרה מרתקים לקבוצות, ארגונים ומשפחות. מסע אינטלקטואלי ורגשי דרך סיפורים, ארכיאולוגיה, גיאופוליטיקה ואמנות – מוגש בשפה בהירה, עם המון תשוקה ואהבה לארץ.</p>
+          <a href="#" class="card-link">קראו עוד ←</a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="service-card">
+        <div class="card-image-wrapper">
+          <img data-context="A jeep tour in the Judean Desert at sunset, a rugged 4x4 vehicle parked on a cliff overlooking a vast canyon, a small group of travelers taking photos, dramatic golden and purple sky, sense of adventure and discovery" width="600" height="400" src="/assets/tourism-guided-tours-section-בית-services-preview-index-services-preview-image-4.webp" alt="טיול ג" יפים="" במדבר="" יהודה="" בשקיעה'="" class="card-image">
+          <div class="card-image-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">טיולי שטח ונוף</h3>
+          <div class="card-accent-line" aria-hidden="true"></div>
+          <p class="card-description">צאו אל מחוץ לחומות. טיולי ג'יפים, הליכה בנחלים נסתרים וביקור במנזרים מבודדים במדבר יהודה. חיבור עמוק לנופים עוצרי הנשימה ולסיפורים התנ"כיים שמאחוריהם.</p>
+          <a href="#" class="card-link">קראו עוד ←</a>
+        </div>
+      </article>
     </div>
+
+    <!-- Bottom CTA -->
+    <div class="services-cta-wrapper">
+      <a href="#" class="btn-primary services-main-cta">לכל הסיורים והחוויות</a>
+    </div>
+
+    <!-- Decorative Background Motifs -->
+    <div class="services-bg-decor" aria-hidden="true">
+      <!-- City Sketch Overlay (Left side) -->
+      <div class="city-sketch-overlay" aria-hidden="true">
+        <svg viewBox="0 0 320 400" xmlns="http://www.w3.org/2000/svg" data-no-icon-edit="true" aria-hidden="true">
+          <path d="M40,380 L40,280 L60,280 L60,260 L80,260 L80,280 L100,280 L100,240 L120,240 L120,220 L140,220 L140,240 L160,240 L160,260 L180,260 L180,280 L200,280 L200,300 L220,300 L220,320 L240,320 L240,340 L260,340 L260,360 L280,360 L280,380 Z" fill="none" stroke="var(--text-light)" stroke-width="1.5" opacity="0.06"></path>
+          <circle cx="160" cy="200" r="15" fill="none" stroke="var(--text-light)" stroke-width="1.5" opacity="0.06"></circle>
+          <circle cx="160" cy="200" r="25" fill="none" stroke="var(--text-light)" stroke-width="1" opacity="0.04"></circle>
+          <path d="M140,200 L180,200 M160,180 L160,220" stroke="var(--text-light)" stroke-width="1" opacity="0.06"></path>
+        </svg>
+      </div>
+      <!-- Stamp Circle (Bottom Right) -->
+      <div class="stamp-circle-overlay" aria-hidden="true">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" data-no-icon-edit="true" aria-hidden="true">
+          <circle cx="60" cy="60" r="50" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="4 4" opacity="0.15"></circle>
+          <circle cx="60" cy="60" r="40" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.1"></circle>
+          <path d="M45,55 Q60,35 75,55 Q60,75 45,55 Z" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.15"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
 </section>
 
 
