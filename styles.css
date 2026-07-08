@@ -872,12 +872,6 @@ html:not([dir]) .whatsapp-float {
   }
 }
 
-
-/* ============================================
-   NAVBAR LAYOUT - POST-GENERATION FIXES
-   Structural layout only - colors from Claude
-   ============================================ */
-
 /* Base navbar styles - structural only, colors from AI */
 .navbar {
   position: sticky;
@@ -992,13 +986,6 @@ html:not([dir]) .whatsapp-float {
   padding: 0.5rem 0.65rem;
   white-space: nowrap;
 }
-
-/* Nav-text COLOR override is scoped to exclude the CTA pill. The CTA carries
-   its own background (--primary / a gradient) + intended on-primary text color;
-   forcing the generic nav-text colour onto it produced the "invisible CTA"
-   bug — e.g. var(--text-dark) text on a --primary (dark) button = same colour.
-   The layout block above still applies to the CTA so vertical alignment with
-   the logo/links is preserved (see the dedup-guard test). */
 .nav-menu > li > a:not(.nav-cta-btn):not(.cta-button),
 .nav-menu > .nav-item > a:not(.nav-cta-btn):not(.cta-button) {
   color: var(--nav-text, var(--text-dark)) !important;
@@ -1426,11 +1413,6 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
   }
   
   /* Mobile menu - full-screen overlay (hidden by default) */
-  /* CRITICAL: display:flex + flex-direction:column carry !important so they win
-     over desktop row layout AND over any inline display:block the preview/runtime
-     scripts may set (they toggle the .active class as the source of truth, and a
-     stylesheet !important beats a non-important inline style). Visibility is the
-     hide mechanism so the panel can fade/slide via opacity + transform. */
   .nav-menu {
     position: fixed;
     top: 70px;
@@ -1539,17 +1521,6 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
     padding-top: 20px;
     animation-delay: 0.44s;
   }
-
-  /* Prefixed with .navbar (specificity 0,4,0) + !important on layout props so
-     this beats two higher-specificity rules that otherwise leak into the
-     overlay and mis-place the pill:
-       1. RTL "push CTA far left": html[lang="he"] .nav-cta-btn { margin-right:auto
-          !important; margin-left:0 !important; order:0 !important } — shoves the
-          pill to the left edge on RTL sites.
-       2. .navbar .nav-menu.active > li > a { display:flex !important;
-          width:100% !important } — forces flex over our display:block.
-     Use symmetric auto margins + order:0 so the pill stays centered in BOTH
-     LTR and RTL. */
   .navbar .nav-menu .mobile-contact-link .nav-cta-btn,
   .navbar .nav-menu .nav-cta-mobile-item .nav-cta-btn,
   .navbar #navMenu .mobile-contact-link .nav-cta-btn,
@@ -1695,7 +1666,6 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
 
   /* Prevent hero image fade gradient from bleeding over headline text below */
   /* The .image-fade-gradient has bottom: -30px which extends below parent; */
-  /* on mobile stacked layout this overlaps the h1 text */
   .hero-image-column {
     overflow: hidden !important;
   }
@@ -1728,13 +1698,6 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
     right: auto !important;
   }
 }
-
-/* ============================================
-   RTL POSITIONING (Hebrew, Arabic)
-   For RTL mobile: hamburger on RIGHT, phone on LEFT
-   (natural mirror of LTR layout)
-   Uses !important to override any inline styles
-   ============================================ */
 @media (max-width: 768px) {
   html[dir="rtl"] .mobile-toggle,
   html[lang="he"] .mobile-toggle,
@@ -1831,25 +1794,6 @@ nav.navbar {
   overflow-x: clip !important;
   overflow-y: visible !important;
 }
-
-/* iOS Safari fix: When the page has hidden horizontal overflow (which iOS
-   does not clip on the <html> element), width: 100% / 100vw on a fixed
-   element resolves to the visual viewport width, which can exceed the
-   actual layout viewport. This pushes children positioned with right:0
-   off-screen to the right.
-
-   Two-part fix:
-   1. Navbar — left:0 + right:0 + width:auto + overflow-x:clip anchors
-      the navbar to the real layout viewport on all mobile browsers.
-      overflow-x:clip (instead of hidden) prevents Safari from creating
-      a scroll container that intercepts touch events on child elements.
-   2. Mobile dropdown menu — position:fixed + right:0 on the menu still
-      anchors to the iOS visual viewport (regardless of its navbar parent).
-      We use a CSS variable --ios-viewport-gap, set by a runtime JS snippet
-      (see ensureIOSNavbarGapFix in githubService) to
-      (window.innerWidth - document.documentElement.clientWidth). Shifting
-      the menu's 'right' by that gap lands it on the real layout-viewport
-      right edge on iOS, and is a no-op on every other browser (gap=0).  */
 @media (max-width: 768px) {
   .navbar,
   nav.navbar {
@@ -1894,8 +1838,6 @@ nav.navbar {
   align-items: center !important;
   justify-content: space-between !important;
 }
-
-/* RTL layout for cloned sites (without nav-right-group) */
 /* Base RTL styles - apply to all screens */
 html[dir="rtl"] .nav-container,
 html[lang="he"] .nav-container,
@@ -1940,8 +1882,6 @@ html[lang="ar"] .nav-cta-btn {
   margin-right: auto !important;
   margin-left: 0 !important;
 }
-
-/* DESKTOP ONLY: Horizontal flex layout for RTL navbar - prevents breaking mobile vertical menu */
 @media (min-width: 769px) {
   html[dir="rtl"] .nav-container,
   html[lang="he"] .nav-container,
@@ -1972,7 +1912,6 @@ html[lang="ar"] .nav-cta-btn {
 
 /* Post-generation fix: Remove main element margin-top and padding-top */
 main:not(.courses-page-main) { margin-top: 0 !important; padding-top: 0 !important; }
-
 
 /* Footer Styles */
 /* ===== FOOTER VARIABLES ===== */
@@ -2359,7 +2298,6 @@ main:not(.courses-page-main) { margin-top: 0 !important; padding-top: 0 !importa
   }
 }
 
-
 /* V2 Decorative Helpers — quote marks */
 :root { --decorative-quote-color: var(--accent, #D6A23A); --decorative-quote-font: var(--accent-font, var(--font-display, serif)); }
 blockquote::before, .quote::before, [data-quote]::before {
@@ -2649,7 +2587,6 @@ main { flex: 1 0 auto; }
 @media (max-width: 768px) {
   .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 28px !important; }
 }
-
 
 /* overview */
 .index-overview-section {
@@ -3802,7 +3739,6 @@ main { flex: 1 0 auto; }
   }
 }
 
-
 /* programs */
 .tours-programs-section {
   background-color: #D6A23A;
@@ -4090,7 +4026,6 @@ main { flex: 1 0 auto; }
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 
 /* experience-flow */
 .tours-experience-flow-section {
@@ -4614,7 +4549,6 @@ main { flex: 1 0 auto; }
 }
 /* ZAPPY_POSTGEN_GUARD_RTL_ORDER:סיורים-audience-fit — stripped 1 order declaration(s) conflicting with RTL grid */
 
-
 /* inquiry-band */
 .tours-inquiry-band-section {
   background-color: var(--bg-dark);
@@ -4763,7 +4697,6 @@ main { flex: 1 0 auto; }
     padding: 80px 32px;
   }
 }
-
 
 /* editorial-intro */
 .ceremonies-lectures-editorial-intro-section {
@@ -6462,7 +6395,6 @@ main { flex: 1 0 auto; }
 }
 [data-layout-spec="אודות-values"] > header > * { margin-inline: auto !important; max-width: 100% !important; }
 
-
 /* timeline */
 .about-timeline-section {
   position: relative;
@@ -6729,7 +6661,6 @@ main { flex: 1 0 auto; }
   }
 }
 
-
 /* personal-approach */
 .about-personal-approach-section {
   background: linear-gradient(180deg, #F5EFE0 0%, #E8DCC8 100%);
@@ -6928,7 +6859,6 @@ main { flex: 1 0 auto; }
   }
 }
 
-
 /* cta-panel */
 /* ==============================================
    CTA PANEL SECTION — אודות-cta-panel
@@ -7076,7 +7006,6 @@ main { flex: 1 0 auto; }
   }
 }
 
-
 /* contact-intro */
 .contact-contact-intro-section {
   background: linear-gradient(180deg, #F5EFE0 0%, #E8DCC8 100%);
@@ -7167,7 +7096,6 @@ main { flex: 1 0 auto; }
   text-align: center !important;
 }
 [data-layout-spec="צור קשר-contact-intro"] > header > * { margin-inline: auto !important; max-width: 100% !important; }
-
 
 /* contact-form */
 .contact-contact-form-section {
@@ -8035,13 +7963,10 @@ main { flex: 1 0 auto; }
   }
 }
 
-
-
 /* Global font override - exclude icon fonts and special elements */
 *:not(.fas):not(.far):not(.fab):not(.fa):not([class*="fa-"]):not(.iconify):not([class*="icon"]):not(code):not(pre):not(i[class*="fa"]) {
   font-family: 'Inter', sans-serif !important;
 }
-
 
 /* Logo size constraint - enforce max-height only */
 .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
@@ -8051,7 +7976,6 @@ main { flex: 1 0 auto; }
   object-fit: contain !important;
 }
 
-
 /* Footer contact alignment fix */
 .footer-contact li > a { display: flex; align-items: flex-start; gap: inherit; }
 
@@ -8060,7 +7984,6 @@ html[dir="rtl"] .footer-contact li, html[dir="rtl"] .site-footer .footer-contact
 html[dir="rtl"] .footer-contact .contact-icon { order: 0 !important; }
 html[dir="rtl"] .footer-contact .contact-text { order: 1 !important; }
 html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
-
 
 /* ============================================
    MOBILE RESPONSIVE FIXES (Auto-generated)
@@ -8292,7 +8215,6 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 
 /* END MOBILE RESPONSIVE FIXES */
 
-
 /* Legal Pages Content Styles */
 
 /* Legal Pages Content Styles */
@@ -8421,13 +8343,6 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   font-family: inherit !important;
   color: var(--cc-primary-color);
 }
-
-/* === Zappy-owned slim bottom bar ===
- * Single-row inline layout: [description text] ......... [Customize] [Accept]
- * The banner is our DOM (#zappy-cookie-banner), not the library's #cm
- * consent modal. That avoids vanilla-cookieconsent's internal
- * <button><span>Label</span></button> structure entirely.
- */
 #zappy-cookie-banner {
   position: fixed !important;
   inset: auto 0 0 0 !important;
@@ -8767,7 +8682,6 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   border: 0 !important;
 }
 
-
 /* Custom Accessibility Toolbar Styling - Zappy Style */
 
 /* Main button icon - ONLY target the floating button, not menu elements */
@@ -8919,13 +8833,6 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   display: flex !important;
 }
 
-
-
-
-
-
-
-
 /* === BUTTON TEXT OVERRIDES START === */
 .btn-accent,
 .btn--accent,
@@ -8934,6 +8841,195 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .navbar .nav-cta-btn,
 .nav-cta-btn { color: #FFFFFF !important; }
 /* === BUTTON TEXT OVERRIDES END === */
+
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (Home-layout)
+   Added: 2026-07-08T14:09:16.317Z
+   ═══════════════════════════════════════════════════════════ */
+.home-layout-section {
+  background: linear-gradient(180deg, #F5EFE0 0%, #E8DCC8 100%);
+  color: var(--text-dark);
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+  direction: rtl;
+}
+
+.home-layout-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Ornamental Divider */
+.home-layout-section__ornamental-divider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.home-layout-section__ornamental-divider svg {
+  width: 200px;
+  height: auto;
+}
+
+/* Main Title */
+.home-layout-section__title {
+  font-family: 'Frank Ruhl Libre', 'Noto Serif Hebrew', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2C1810;
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: 0;
+}
+
+/* About Me Section */
+.home-layout-section__about {
+  max-width: 800px;
+  margin: 0 auto 64px auto;
+  text-align: right;
+}
+
+.home-layout-section__about-text {
+  font-family: 'Heebo', 'Assistant', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #4A3728;
+}
+
+/* Tours Grid */
+.home-layout-section__tours-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  direction: rtl;
+}
+
+/* Tour Card */
+.home-layout-section__tour-card {
+  background: #F5EFE0;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(44, 24, 16, 0.1);
+  overflow: hidden;
+  border: 1px solid rgba(212, 168, 83, 0.15);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-layout-section__tour-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(44, 24, 16, 0.14);
+}
+
+.home-layout-section__tour-image-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-layout-section__tour-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-layout-section__tour-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.home-layout-section__tour-title {
+  font-family: 'Frank Ruhl Libre', 'Noto Serif Hebrew', serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #2C1810;
+  margin-bottom: 12px;
+}
+
+.home-layout-section__tour-description {
+  font-family: 'Heebo', 'Assistant', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #4A3728;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.home-layout-section__tour-link {
+  display: inline-block;
+  align-self: flex-start;
+  background: #C8963E;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  margin-top: auto;
+}
+
+.home-layout-section__tour-link:hover {
+  background-color: #B8862E;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .home-layout-section__tours-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-layout-section {
+    padding: 60px 16px;
+  }
+
+  .home-layout-section__title {
+    font-size: 2.25rem;
+  }
+
+  .home-layout-section__about {
+    margin-bottom: 48px;
+  }
+
+  .home-layout-section__tours-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .home-layout-section__tour-content {
+    padding: 16px;
+  }
+
+  .home-layout-section__tour-title {
+    font-size: 1.25rem;
+  }
+
+  .home-layout-section__tour-link {
+    padding: 8px 16px;
+  }
+}
+/* ZAPPY_POSTGEN_GUARD_GRAD_BG_FALLBACK:Home-layout (home-layout) — solid fallback behind gradient */
+[data-layout-spec="Home-layout"].home-layout-section,
+[data-layout-spec="Home-layout"] .home-layout-section {
+  background-color: var(--bg-light);
+}
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
