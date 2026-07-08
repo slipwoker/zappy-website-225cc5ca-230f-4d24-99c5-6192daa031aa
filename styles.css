@@ -9041,6 +9041,52 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   margin-bottom: 32px;
   margin-top: 0;
 }
+
+.home-layout-section .home-layout-section__title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.home-layout-section .home-layout-section__title-row .home-layout-section__title {
+  font-family: 'Frank Ruhl Libre', 'Noto Serif Hebrew', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2C1810;
+  text-align: center;
+  margin: 0;
+  white-space: nowrap;
+  letter-spacing: 0;
+}
+
+.home-layout-section .home-layout-section__title-ornament {
+  width: 160px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+.home-layout-section .home-layout-section__title-row {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.home-layout-section .home-layout-section__title-row .home-layout-section__title {
+  font-size: 1.75rem;
+  white-space: normal;
+}
+
+.home-layout-section .home-layout-section__title-ornament {
+  width: 100px;
+}
+}
+/* zappy-self-heal */
+.home-layout-section .home-layout-section__title-row { gap: 16px !important; }
+.home-layout-section .home-layout-section__title-ornament { width: 160px !important; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
