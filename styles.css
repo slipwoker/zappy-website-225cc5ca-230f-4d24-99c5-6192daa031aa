@@ -3083,247 +3083,25 @@ main { flex: 1 0 auto; }
    Deep ink-brown, warm gold accents, stone-grain texture
    ========================================================================== */
 
-.index-cta-section {
-  position: relative;
-  background-color: var(--bg-dark);
-  background-image:
-    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"),
-    linear-gradient(180deg, #2B2118 0%, #3D2E22 100%);
-  color: var(--text-light);
-  padding: var(--spacing-section, 96px) 16px;
-  overflow: hidden;
-  direction: rtl;
-}
-
 /* ── Container ── */
-.index-cta-section .cta-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 64px;
-  position: relative;
-  z-index: 2;
-}
 
 /* ── Heading Side (Right) ── */
-.index-cta-section .cta-heading-side {
-  flex: 1 1 50%;
-  position: relative;
-}
-
-.index-cta-section .cta-heading {
-  font-family: 'Rubik', sans-serif;
-  font-size: 3rem; /* 48px H1 scale */
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--text-light);
-  margin: 0;
-  text-align: start;
-  letter-spacing: -0.01em;
-}
 
 /* ── Stamp Motif Decoration ── */
-.index-cta-section .stamp-motif {
-  position: absolute;
-  bottom: -20px;
-  inset-inline-end: -40px;
-  width: 120px;
-  height: 120px;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.85;
-}
-
-.index-cta-section .stamp-motif svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
 
 /* ── Action Side (Left) ── */
-.index-cta-section .cta-action-side {
-  flex: 1 1 50%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.index-cta-section .cta-prompt-card {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(4px);
-  border: 1px solid var(--border-dark);
-  border-radius: var(--radius-card, 6px);
-  padding: var(--spacing-card-padding, 32px);
-  max-width: 480px;
-  width: 100%;
-  position: relative;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-}
-
-.index-cta-section .cta-prompt-text {
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--text-light);
-  margin: 0 0 32px 0;
-  text-align: start;
-}
 
 /* ── Buttons Group ── */
-.index-cta-section .cta-buttons-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 32px;
-}
 
 /* Primary CTA Button */
-.index-cta-section .cta-btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--accent);
-  color: #FFFFFF;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.03em;
-  padding: 16px 32px;
-  border-radius: var(--radius-btn, 6px);
-  border: none;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.index-cta-section .cta-btn-primary:hover {
-  background: #D6A23A;
-  box-shadow: 0 8px 30px rgba(214, 162, 58, 0.35);
-  transform: translateY(-2px);
-}
 
 /* Secondary CTA Button */
-.index-cta-section .cta-btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  color: var(--text-light);
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.03em;
-  padding: 16px 32px;
-  border-radius: var(--radius-btn, 6px);
-  border: 2px solid var(--text-light);
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.index-cta-section .cta-btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: var(--accent);
-  color: var(--accent);
-  transform: translateY(-2px);
-}
 
 /* ── Route Line Endpoint SVG ── */
-.index-cta-section .route-line-endpoint {
-  position: absolute;
-  bottom: -16px;
-  inset-inline-start: -40px;
-  width: 160px;
-  height: 50px;
-  pointer-events: none;
-  z-index: 3;
-  transform: rotate(-15deg);
-}
-
-.index-cta-section .route-line-endpoint svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
 
 /* ==========================================================================
    RESPONSIVE — Tablet & Mobile
    ========================================================================== */
-
-@media (max-width: 768px) {
-  .index-cta-section {
-    padding: var(--spacing-section-mobile, 64px) 16px;
-  }
-
-  .index-cta-section .cta-container {
-    flex-direction: column;
-    gap: 40px;
-    align-items: stretch;
-  }
-
-  .index-cta-section .cta-heading-side {
-    flex: unset;
-    text-align: center;
-  }
-
-  .index-cta-section .cta-heading {
-    font-size: 2.25rem; /* ~36px for mobile */
-    text-align: center;
-    line-height: 1.3;
-  }
-
-  .index-cta-section .cta-heading br {
-    display: none;
-  }
-
-  .index-cta-section .stamp-motif {
-    bottom: -30px;
-    inset-inline-end: 0;
-    width: 80px;
-    height: 80px;
-    opacity: 0.5;
-    position: relative;
-    margin: 16px auto 0;
-    display: block;
-  }
-
-  .index-cta-section .cta-action-side {
-    flex: unset;
-    justify-content: center;
-  }
-
-  .index-cta-section .cta-prompt-card {
-    max-width: 100%;
-    padding: 24px;
-  }
-
-  .index-cta-section .cta-prompt-text {
-    text-align: center;
-    margin-bottom: 24px;
-  }
-
-  .index-cta-section .cta-buttons-group {
-    flex-direction: column;
-    align-items: stretch;
-    margin-bottom: 0;
-  }
-
-  .index-cta-section .cta-btn-primary,
-  .index-cta-section .cta-btn-secondary {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .index-cta-section .route-line-endpoint {
-    display: none; /* Hide decorative route line on small screens to avoid clutter */
-  }
-}
 
 /* page-intro */
 .tours-page-intro-section {
@@ -9133,6 +8911,207 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 }
 [data-layout-spec="בית-services-preview"] > header > * { margin-inline: auto !important; max-width: 100% !important; }
 
+
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (בית-cta)
+   Added: 2026-07-09T05:47:13.824Z
+   ═══════════════════════════════════════════════════════════ */
+.index-cta-section {
+  background: linear-gradient(180deg, #1A2744 0%, #0F1A30 100%);
+  color: var(--text-light);
+  padding: 80px 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.index-cta-section .cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.index-cta-section .cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  direction: rtl;
+}
+
+/* Image Column */
+.index-cta-section .cta-image-col img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow-medium);
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3/2;
+  border: 1px solid rgba(212, 168, 83, 0.2);
+}
+
+/* Form Column */
+.index-cta-section .cta-form-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.index-cta-section .cta-heading {
+  font-family: 'Frank Ruhl Libre', 'Noto Serif Hebrew', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-light);
+  margin: 0;
+  text-align: start;
+}
+
+.index-cta-section .cta-subtitle {
+  color: var(--text-light);
+  opacity: 0.85;
+  margin: 0;
+  text-align: start;
+}
+
+/* Form Styling */
+.index-cta-section .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.index-cta-section .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  direction: rtl;
+}
+
+.index-cta-section .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.index-cta-section .form-group label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--accent);
+  text-align: start;
+}
+
+.index-cta-section .form-group input,
+.index-cta-section .form-group textarea {
+  background: rgba(243, 231, 207, 0.1);
+  border: 1px solid rgba(212, 168, 83, 0.3);
+  border-radius: 4px;
+  padding: 12px 16px;
+  color: var(--text-light);
+  font-family: 'Assistant', 'Noto Sans Hebrew', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  outline: none;
+  text-align: start;
+}
+
+.index-cta-section .form-group input::placeholder,
+.index-cta-section .form-group textarea::placeholder {
+  color: rgba(243, 231, 207, 0.5);
+}
+
+.index-cta-section .form-group input:focus,
+.index-cta-section .form-group textarea:focus {
+  border-color: var(--accent);
+  background: rgba(243, 231, 207, 0.15);
+}
+
+.index-cta-section .privacy-consent {
+  margin-top: 4px;
+}
+
+.index-cta-section .privacy-consent-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--text-light);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.index-cta-section .privacy-consent-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.index-cta-section .privacy-consent-label a {
+  color: var(--accent);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.index-cta-section .privacy-consent-label a:hover {
+  color: #E8C46A;
+}
+
+.index-cta-section .btn-submit {
+  background: var(--accent);
+  color: #1A2744;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.index-cta-section .btn-submit:hover {
+  background: #E8C46A;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(214, 162, 58, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .index-cta-section {
+    padding: 60px 16px;
+  }
+
+  .index-cta-section .cta-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .index-cta-section .cta-image-col {
+    order: 2;
+  }
+
+  .index-cta-section .cta-form-col {
+    order: 1;
+  }
+
+  .index-cta-section .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .index-cta-section .cta-heading {
+    font-size: 1.75rem;
+  }
+
+  .index-cta-section .btn-submit {
+    width: 100%;
+    text-align: center;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
