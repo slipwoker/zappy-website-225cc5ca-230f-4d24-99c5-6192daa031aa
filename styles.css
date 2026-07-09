@@ -9392,6 +9392,35 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
     padding: 12px 20px;
   }
 }
+
+.lectures-section .lectures-title,
+.lectures-section .lecture-card-title,
+.lectures-section .lecture-description,
+.lectures-section .lecture-badge,
+.lectures-section .lecture-button {
+  color: #000000;
+}
+
+.lectures-section .lectures-divider-icon {
+  color: #000000;
+}
+
+.site-footer {
+  background-color: #F3E7CF !important;
+}
+
+.site-footer,
+.site-footer h4,
+.site-footer p,
+.site-footer span:not(.contact-icon i),
+.site-footer a,
+.site-footer li {
+  color: #000000 !important;
+}
+
+.site-footer .footer-bottom {
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
