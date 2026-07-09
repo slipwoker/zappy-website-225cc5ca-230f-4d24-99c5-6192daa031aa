@@ -9421,6 +9421,40 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .site-footer .footer-bottom {
   border-top: 1px solid rgba(0,0,0,0.1);
 }
+
+#zappy-section-1783585962775-6978,
+#zappy-section-1783585962775-6978 h1,
+#zappy-section-1783585962775-6978 h2,
+#zappy-section-1783585962775-6978 h3,
+#zappy-section-1783585962775-6978 h4,
+#zappy-section-1783585962775-6978 h5,
+#zappy-section-1783585962775-6978 h6,
+#zappy-section-1783585962775-6978 p,
+#zappy-section-1783585962775-6978 span,
+#zappy-section-1783585962775-6978 a,
+#zappy-section-1783585962775-6978 li,
+#zappy-section-1783585962775-6978 label,
+#zappy-section-1783585962775-6978 blockquote,
+#zappy-section-1783585962775-6978 figcaption {
+  color: #000000 !important;
+}
+
+#tours-inquiry-band-section,
+#tours-inquiry-band-section h1,
+#tours-inquiry-band-section h2,
+#tours-inquiry-band-section h3,
+#tours-inquiry-band-section h4,
+#tours-inquiry-band-section h5,
+#tours-inquiry-band-section h6,
+#tours-inquiry-band-section p,
+#tours-inquiry-band-section span,
+#tours-inquiry-band-section a,
+#tours-inquiry-band-section li,
+#tours-inquiry-band-section label,
+#tours-inquiry-band-section blockquote,
+#tours-inquiry-band-section figcaption {
+  color: #000000 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
