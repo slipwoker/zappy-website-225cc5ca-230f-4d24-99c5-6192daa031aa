@@ -6,29 +6,32 @@
 
 ## Pages
 
-### בית
+### גלו את הקסם הנסתר של ירושלים — חלום ירושלים
 https://jerusalem-dream.zappy5.app
 צללו לחוויה בלתי נשכחת עם מורה דרך מוסמך בעל ניסיון של 20 שנה. סיורים, טקסים והרצאות שמחברים אתכם לעומק התרבותי של ירושלים. הזמינו את המסע שלכם עוד היום!
 
-### קדושת ירושלים לשלוש הדתות
+### צעדו בסמטאות העתיקות והרגישו את ההיסטוריה — חלום ירושלים
 https://jerusalem-dream.zappy5.app/kdvsht-yrvshlym-lshlvsh-hdtvt
 הצטרפו לסיורי עומק חווייתיים בירושלים, מהעיר העתיקה ועד הר הזיתים. כל מסלול נארג בתשוקה לחשוף רבדים נסתרים של תרבות ואמונה. בואו לחוות את העיר מחדש!
 
-### טקסים
+### התחברו לרגעים מקודשים ולסיפורים נדירים — חלום ירושלים
 https://jerusalem-dream.zappy5.app/ceremonies
 גלו את עומק המסורת בטקס האפיפאנייה המרגש או בהרצאות מרתקות על קהילת ביתא ישראל. חוויה לימודית ורוחנית המשלבת ידע נדיר עם חיבור אישי. הצטרפו למסע יוצא דופן!
 
-### אודות
+### הכירו את האיש שמאחורי החוויה הירושלמית — חלום ירושלים
 https://jerusalem-dream.zappy5.app/about
 מורה דרך מוסמך עם מעל 20 שנות ניסיון, המשלב ידע מעמיק עם תשוקה אמיתית לחשוף את נשמת ירושלים. קראו על הסיפור האישי שמאחורי המסעות הבלתי נשכחים שלנו.
-
-### צור קשר
-https://jerusalem-dream.zappy5.app/contact
-מוכנים לצאת להרפתקה תרבותית עמוקה? צרו קשר עוד היום כדי לתכנן סיור מותאם אישית, להזמין הרצאה או להשתתף בטקס ייחודי. אנחנו כאן כדי להגשים את חלום ירושלים שלכם!
 
 ### תודה שפניתם אלינו
 https://jerusalem-dream.zappy5.app/thank-you
 חלום ירושלים - תודה שפניתם אלינו
+
+### Page
+https://jerusalem-dream.zappy5.app/menu-group-1783586716435
+
+### המסע המושלם שלכם מתחיל בשיחה אחת — חלום ירושלים
+https://jerusalem-dream.zappy5.app/contact
+מוכנים לצאת להרפתקה תרבותית עמוקה? צרו קשר עוד היום כדי לתכנן סיור מותאם אישית, להזמין הרצאה או להשתתף בטקס ייחודי. אנחנו כאן כדי להגשים את חלום ירושלים שלכם!
 
 ## Legal & Policy
 
@@ -59,11 +62,11 @@ Information about WCAG compliance and accessibility features.
 - Method: POST
 - Content-Type: application/json
 - Fields:
-  - `first_name` (text, required)
-  - `last_name` (text, required)
-  - `phone` (tel, required)
+  - `first_name` (text)
+  - `last_name` (text)
+  - `phone` (tel)
   - `message` (textarea)
-  - `privacy_consent` (checkbox, required)
+  - `privacy_consent` (checkbox)
 
 ---
 
