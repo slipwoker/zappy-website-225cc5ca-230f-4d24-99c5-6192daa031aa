@@ -1,16 +1,17 @@
 # Clean URL redirects for Render static hosting
-# Generated: 2026-07-09T08:44:11.397Z
+# Generated: 2026-07-09T08:46:10.637Z
 # NOTE: Render uses render.yaml for routing, not _redirects (that is Netlify)
 # This file is kept for reference only
 
+/menu-group-1783586716435  /menu-group-1783586716435.html  200!
 /kdvsht-yrvshlym-lshlvsh-hdtvt  /kdvsht-yrvshlym-lshlvsh-hdtvt.html  200!
 /ceremonies  /ceremonies.html  200!
 /about  /about.html  200!
-/contact  /contact.html  200!
 /privacy  /privacy.html  200!
 /accessibility  /accessibility.html  200!
 /terms  /terms.html  200!
 /thank-you  /thank-you.html  200!
+/contact  /contact.html  200!
 
 # Legal pages - redirect old .html URLs to friendly URLs
 /privacy.html  /privacy  301
