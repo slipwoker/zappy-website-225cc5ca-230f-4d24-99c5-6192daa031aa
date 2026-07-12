@@ -7,44 +7,44 @@
 ## Pages
 
 ### גלו את הקסם הנסתר של ירושלים — חלום ירושלים
-https://jerusalem-dream.zappy5.app
+https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com
 צללו לחוויה בלתי נשכחת עם מורה דרך מוסמך בעל ניסיון של 20 שנה. סיורים, טקסים והרצאות שמחברים אתכם לעומק התרבותי של ירושלים. הזמינו את המסע שלכם עוד היום!
 
 ### Page
-https://jerusalem-dream.zappy5.app/menu-group-1783586716435
+https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/menu-group-1783586716435
 
 ### צעדו בסמטאות העתיקות והרגישו את ההיסטוריה — חלום ירושלים
-https://jerusalem-dream.zappy5.app/kdvsht-yrvshlym-lshlvsh-hdtvt
+https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/kdvsht-yrvshlym-lshlvsh-hdtvt
 הצטרפו לסיורי עומק חווייתיים בירושלים, מהעיר העתיקה ועד הר הזיתים. כל מסלול נארג בתשוקה לחשוף רבדים נסתרים של תרבות ואמונה. בואו לחוות את העיר מחדש!
 
 ### התחברו לרגעים מקודשים ולסיפורים נדירים — חלום ירושלים
-https://jerusalem-dream.zappy5.app/ceremonies
+https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/ceremonies
 גלו את עומק המסורת בטקס האפיפאנייה המרגש או בהרצאות מרתקות על קהילת ביתא ישראל. חוויה לימודית ורוחנית המשלבת ידע נדיר עם חיבור אישי. הצטרפו למסע יוצא דופן!
 
 ### הכירו את האיש שמאחורי החוויה הירושלמית — חלום ירושלים
-https://jerusalem-dream.zappy5.app/about
+https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/about
 מורה דרך מוסמך עם מעל 20 שנות ניסיון, המשלב ידע מעמיק עם תשוקה אמיתית לחשוף את נשמת ירושלים. קראו על הסיפור האישי שמאחורי המסעות הבלתי נשכחים שלנו.
 
 ### תודה שפניתם אלינו
-https://jerusalem-dream.zappy5.app/thank-you
+https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/thank-you
 חלום ירושלים - תודה שפניתם אלינו
 
 ### המסע המושלם שלכם מתחיל בשיחה אחת — חלום ירושלים
-https://jerusalem-dream.zappy5.app/contact
+https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/contact
 מוכנים לצאת להרפתקה תרבותית עמוקה? צרו קשר עוד היום כדי לתכנן סיור מותאם אישית, להזמין הרצאה או להשתתף בטקס ייחודי. אנחנו כאן כדי להגשים את חלום ירושלים שלכם!
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://jerusalem-dream.zappy5.app/privacy
+https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://jerusalem-dream.zappy5.app/terms
+https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://jerusalem-dream.zappy5.app/accessibility
+https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -57,8 +57,8 @@ Information about WCAG compliance and accessibility features.
 - Address: קורא הדורות 23, ירושלים
 
 ### Contact form
-- URL: https://jerusalem-dream.zappy5.app
-- Endpoint: https://jerusalem-dream.zappy5.app/api/email/contact-form
+- URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com
+- Endpoint: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/api/email/contact-form
 - Method: POST
 - Content-Type: application/json
 - Fields:
@@ -95,6 +95,6 @@ Tourism & Guided Tours
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://jerusalem-dream.zappy5.app/sitemap.xml
-- Robots: https://jerusalem-dream.zappy5.app/robots.txt
-- Flattened page text (for LLMs): https://jerusalem-dream.zappy5.app/llms-full.txt
+- Sitemap (XML): https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/sitemap.xml
+- Robots: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/robots.txt
+- Flattened page text (for LLMs): https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/llms-full.txt
