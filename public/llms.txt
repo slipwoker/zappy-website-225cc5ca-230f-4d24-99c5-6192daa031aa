@@ -27,15 +27,12 @@ https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/lectures-column
 https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/thank-you
 חלום ירושלים - תודה שפניתם אלינו
 
-### התחברו לרגעים מקודשים ולסיפורים נדירים — חלום ירושלים
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/ceremonies-page
-גלו את עומק המסורת בטקס האפיפאנייה המרגש או בהרצאות מרתקות על קהילת ביתא ישראל. חוויה לימודית ורוחנית המשלבת ידע נדיר עם חיבור אישי. הצטרפו למסע יוצא דופן!
-
 ### Page
 https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/menu-group-1783849107328
 
-### Page
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/new-page-1783849149931
+### התחברו לרגעים מקודשים ולסיפורים נדירים — חלום ירושלים
+https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/ceremonies-page
+גלו את עומק המסורת בטקס האפיפאנייה המרגש או בהרצאות מרתקות על קהילת ביתא ישראל. חוויה לימודית ורוחנית המשלבת ידע נדיר עם חיבור אישי. הצטרפו למסע יוצא דופן!
 
 ### המסע המושלם שלכם מתחיל בשיחה אחת — חלום ירושלים
 https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/contact
@@ -70,11 +67,11 @@ Information about WCAG compliance and accessibility features.
 - Method: POST
 - Content-Type: application/json
 - Fields:
-  - `first_name` (text)
-  - `last_name` (text)
-  - `phone` (tel)
+  - `first_name` (text, required)
+  - `last_name` (text, required)
+  - `phone` (tel, required)
   - `message` (textarea)
-  - `privacy_consent` (checkbox)
+  - `privacy_consent` (checkbox, required)
 
 ---
 
