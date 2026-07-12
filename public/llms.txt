@@ -13,9 +13,12 @@ https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com
 ### Page
 https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/menu-group-1783586716435
 
-### קדושת ירושלים לשלוש הדתות
+### צעדו בסמטאות העתיקות והרגישו את ההיסטוריה — חלום ירושלים
 https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/three-religions
 הצטרפו לסיורי עומק חווייתיים בירושלים, מהעיר העתיקה ועד הר הזיתים. כל מסלול נארג בתשוקה לחשוף רבדים נסתרים של תרבות ואמונה. בואו לחוות את העיר מחדש!
+
+### Page
+https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/lectures
 
 ### התחברו לרגעים מקודשים ולסיפורים נדירים — חלום ירושלים
 https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/ceremonies
@@ -62,11 +65,11 @@ Information about WCAG compliance and accessibility features.
 - Method: POST
 - Content-Type: application/json
 - Fields:
-  - `first_name` (text, required)
-  - `last_name` (text, required)
-  - `phone` (tel, required)
+  - `first_name` (text)
+  - `last_name` (text)
+  - `phone` (tel)
   - `message` (textarea)
-  - `privacy_consent` (checkbox, required)
+  - `privacy_consent` (checkbox)
 
 ---
 
