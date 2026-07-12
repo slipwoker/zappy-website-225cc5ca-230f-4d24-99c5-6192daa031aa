@@ -9759,6 +9759,13 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
     padding: 14px 16px;
   }
 }
+
+@media (max-width: 768px) {
+.nav-menu a, #navMenu a, .nav-menu .menu-group-title, #navMenu .menu-group-title {
+  font-size: 1.15rem !important;
+  line-height: 1.6 !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
