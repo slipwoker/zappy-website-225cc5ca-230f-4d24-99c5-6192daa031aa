@@ -9759,6 +9759,17 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
     padding: 14px 16px;
   }
 }
+
+.nav-menu a, #navMenu a, .nav-menu .menu-group-title, #navMenu .menu-group-title {
+  font-size: 1.1rem !important;
+}
+
+@media (max-width: 768px) {
+.nav-menu a, #navMenu a, .nav-menu .menu-group-title, #navMenu .menu-group-title {
+  font-size: 1.2rem !important;
+  line-height: 1.7 !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
