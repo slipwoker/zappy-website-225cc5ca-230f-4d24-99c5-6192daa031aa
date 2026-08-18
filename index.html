@@ -2381,7 +2381,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
   <div class="hero-content-group" data-zappy-align-target="true"><h1 class="hero-headline" style="font-size: 3.5rem; font-weight: 700; color: #F3E7CF; margin-bottom: 16px; line-height: 1.2;">חלום ירושלים</h1><h2 style="font-size: 1.5rem; font-weight: 400; color: #F3E7CF; opacity: 0.9; margin-bottom: 32px; letter-spacing: 0.02em;">סיור, חוויה, מפגש</h2><div class="hero-ctas"><a href="/three-religions" class="btn btn-primary" data-element-type="button" data-element-id="zappy-drop-pm93aoc82" data-native-element="true" style="outline: none; color: rgb(255, 255, 255) !important; border-color: rgb(184, 134, 46) !important; background-color: rgb(184, 134, 46) !important; background-image: none !important;">סיורים</a><a href="/contact" class="btn btn-primary" data-element-type="button" data-element-id="btn-1782986222469-wjfg3mtbr" data-native-element="true" style="outline: none; border-color: rgb(184, 134, 46) !important; color: rgb(255, 255, 255) !important; background-color: rgb(184, 134, 46) !important; background-image: none !important;">צרו קשר</a></div></div>
 
   <!-- Bottom Divider -->
-  <div class="index-hero-divider-wrapper" aria-hidden="true">
+  <div class="index-hero-divider-wrapper" aria-hidden="true" style="; display: none !important;">
     <svg data-no-icon-edit="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <!-- Torn parchment edge -->
       <path d="M0,80 L0,35 Q20,32 40,36 T80,33 Q100,37 120,34 T160,36 Q180,32 200,35 T240,33 Q260,37 280,34 T320,36 Q340,32 360,35 T400,33 Q420,37 440,34 T480,36 Q500,32 520,35 T560,33 Q580,37 600,34 T640,36 Q660,32 680,35 T720,33 Q740,37 760,34 T800,36 Q820,32 840,35 T880,33 Q900,37 920,34 T960,36 Q980,32 1000,35 T1040,33 Q1060,37 1080,34 T1120,36 Q1140,32 1160,35 T1200,33 L1200,80 Z" fill="#F5EFE0"></path>
@@ -2391,7 +2391,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
   </div>
 </section>
 
-<section id="layout-1783581693605" class="layout-section" data-zappy-component="true" style="width: 100%; padding: 80px 20px; direction: rtl; background-color: #F5EFE0; background: linear-gradient(180deg, #F5EFE0 0%, #E8DCC8 100%)" data-component-id="empty-section">
+<section id="layout-1783581693605" class="layout-section zappy-lazy-bg" data-zappy-component="true" style="width: 100%;padding: 80px 20px;direction: rtl;background: linear-gradient(180deg, #F5EFE0 0%, #E8DCC8 100%);position: relative;overflow: hidden;background-size: cover;background-position: center;background-repeat: no-repeat;--zappy-bg-overlay: rgba(0, 0, 0, 0)" data-component-id="empty-section" data-zappy-bg-type="image" data-zappy-bg-color="" data-zappy-bg-image="assets/image-general-hero-upload-1787060031474.webp" data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="0" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-zappy-lazy-bg="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(&quot;assets/image-general-hero-upload-1787060031474.webp&quot;);--zappy-bg-image: url(&quot;assets/image-general-hero-upload-1787060031474.webp&quot;);">
   <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;"><div style="max-width: 800px; margin: 0 auto; padding: 20px 0; text-align: right; direction: rtl;">
   <h2 style="font-family: 'Frank Ruhl Libre', 'Noto Serif Hebrew', serif; font-size: 2.5rem; font-weight: 700; color: #2C1810; text-align: center; margin-bottom: 32px; line-height: 1.2;">חלום ירושלים</h2>
   
@@ -2899,6 +2899,9 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
 
     <script src="/script.js"></script>
 
+    <script id="zappy-lazy-bg-loader">
+(function(){function load(el){var css=el.getAttribute('data-zappy-lazy-bg');if(!css)return;el.style.cssText=(el.getAttribute('style')||'').replace(/;?\s*$/,';')+css;el.removeAttribute('data-zappy-lazy-bg');el.classList.remove('zappy-lazy-bg');}function init(){var els=[].slice.call(document.querySelectorAll('[data-zappy-lazy-bg]'));if(!els.length)return;if(!('IntersectionObserver'in window)){els.forEach(load);return;}var io=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){io.unobserve(entry.target);load(entry.target);}});},{rootMargin:'300px 0px'});els.forEach(function(el){io.observe(el);});setTimeout(function(){els.forEach(function(el){if(el.hasAttribute('data-zappy-lazy-bg'))load(el);});},9000);}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init,{once:true});}else{init();}})();
+</script>
     <script id="zappy-font-awesome-loader">
 (function(){if(window.__zappyFontAwesomeLoader)return;window.__zappyFontAwesomeLoader=true;var href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';function load(){if(document.querySelector('link[href*="font-awesome"][href*="all.min.css"]'))return;var l=document.createElement('link');l.rel='stylesheet';l.href=href;l.crossOrigin='anonymous';l.referrerPolicy='no-referrer';document.head.appendChild(l);}function schedule(){if('requestIdleCallback'in window){requestIdleCallback(load,{timeout:5000});}else{setTimeout(load,3500);}}['pointerdown','keydown','touchstart','mouseover'].forEach(function(evt){window.addEventListener(evt,load,{once:true,passive:true});});schedule();})();
 </script>
