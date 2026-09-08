@@ -68,15 +68,15 @@ Information about WCAG compliance and accessibility features.
 - Address: קורא הדורות 23, ירושלים
 
 ### Contact form
-- URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com
+- URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/contact
 - Endpoint: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/api/email/contact-form
 - Method: POST
 - Content-Type: application/json
 - Fields:
-  - `first_name` (text, required)
-  - `last_name` (text, required)
+  - `name` (text, required)
+  - `email` (email, required)
   - `phone` (tel, required)
-  - `message` (textarea)
+  - `message` (textarea, required)
   - `privacy_consent` (checkbox, required)
 
 ---
