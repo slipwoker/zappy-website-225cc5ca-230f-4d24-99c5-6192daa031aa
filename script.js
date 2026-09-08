@@ -458,84 +458,109 @@ window.onload = function() {
     }
 })();
 
-/* ZAPPY_CUSTOM_JS_START:b4cf71ccef2a */
+/* ZAPPY_CUSTOM_JS_START:f4bc1e378939 */
 (function () {
   function __zappyCustomInit() {
     try {
-(function () {
-  var section = document.querySelector('.home-layout-section');
-  if (!section) return;
-  var grid = section.querySelector('.home-layout-section__tours-grid');
-  if (!grid) return;
-  var cards = Array.prototype.slice.call(grid.querySelectorAll('.home-layout-section__tour-card'));
-  if (cards.length < 2) return;
+(function(){
+  function initToursCarousel(){
+    const grid = document.querySelector('#layout-1783519154228 .home-layout-section__tours-grid');
+    if (!grid) return;
+    // Only run once
+    if (grid.dataset.carouselInit === '1') return;
+    grid.dataset.carouselInit = '1';
 
-  function activeIndex() {
-    var center = grid.scrollLeft + grid.clientWidth / 2;
-    var best = 0, bestDist = Infinity;
-    cards.forEach(function (c, i) {
-      var d = Math.abs((c.offsetLeft + c.offsetWidth / 2) - center);
-      if (d < bestDist) { bestDist = d; best = i; }
+    const nav = document.querySelector('#layout-1783519154228 .tours-carousel-nav');
+    const dotsWrap = document.querySelector('#layout-1783519154228 .carousel-dots');
+    if (!nav || !dotsWrap) return;
+
+    const prevBtn = nav.querySelector('.carousel-arrow.prev');
+    const nextBtn = nav.querySelector('.carousel-arrow.next');
+    const cards = Array.from(grid.children).filter(function(c){ return c.classList && c.classList.contains('home-layout-section__tour-card'); });
+    if (!cards.length) return;
+
+    // Ensure horizontal scroll layout
+    grid.style.display = 'flex';
+    grid.style.flexWrap = 'nowrap';
+    grid.style.overflowX = 'auto';
+    grid.style.overflowY = 'hidden';
+    grid.style.scrollBehavior = 'smooth';
+    grid.style.scrollSnapType = 'x mandatory';
+
+    cards.forEach(function(c){
+      c.style.flex = '0 0 auto';
+      c.style.scrollSnapAlign = 'start';
     });
-    return best;
+
+    function currentIndex(){
+      // In RTL, scrollLeft is often negative or reversed; compute based on scroll position
+      var sl = grid.scrollLeft;
+      var max = grid.scrollWidth - grid.clientWidth;
+      if (max <= 0) return 0;
+      // Find nearest card
+      var best = 0, bestDist = Infinity;
+      cards.forEach(function(c, i){
+        var pos = c.offsetLeft;
+        var d = Math.abs(pos - sl);
+        if (d < bestDist){ bestDist = d; best = i; }
+      });
+      return best;
+    }
+
+    function goTo(i){
+      if (i < 0) i = 0;
+      if (i >= cards.length) i = cards.length - 1;
+      var card = cards[i];
+      var target = card.offsetLeft - (grid.clientWidth - card.clientWidth)/2;
+      if (target < 0) target = 0;
+      var max = grid.scrollWidth - grid.clientWidth;
+      if (target > max) target = max;
+      try { grid.scrollTo({ left: target, behavior: 'smooth' }); }
+      catch(e){ grid.scrollLeft = target; }
+      updateDots(i);
+    }
+
+    function updateDots(i){
+      dotsWrap.querySelectorAll('.dot').forEach(function(d, idx){
+        if (idx === i){ d.classList.add('is-active'); }
+        else { d.classList.remove('is-active'); }
+      });
+    }
+
+    if (prevBtn){
+      prevBtn.addEventListener('click', function(){ goTo(currentIndex() - 1); });
+    }
+    if (nextBtn){
+      nextBtn.addEventListener('click', function(){ goTo(currentIndex() + 1); });
+    }
+
+    // Sync dots with existing HTML dots
+    var dots = dotsWrap.querySelectorAll('.dot');
+    if (dots.length){
+      dots.forEach(function(d, idx){
+        d.addEventListener('click', function(){ goTo(idx); });
+      });
+    }
+
+    // Update active dot on manual scroll
+    var scrollTimer;
+    grid.addEventListener('scroll', function(){
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(function(){
+        updateDots(currentIndex());
+      }, 100);
+    });
+
+    updateDots(0);
   }
 
-  function goTo(i) {
-    i = Math.max(0, Math.min(cards.length - 1, i));
-    var c = cards[i];
-    grid.scrollTo({ left: c.offsetLeft + c.offsetWidth / 2 - grid.clientWidth / 2, behavior: 'smooth' });
+  if (document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initToursCarousel);
+  } else {
+    initToursCarousel();
   }
-
-  function update() {
-    var a = activeIndex();
-    cards.forEach(function (c, i) { c.classList.toggle('is-active', i === a); });
-    var dots = grid.parentNode.querySelectorAll('.carousel-dots .dot');
-    dots.forEach(function (d, i) { d.classList.toggle('is-active', i === a); });
-  }
-
-  // Build nav (arrows + dots) before the grid
-  var nav = document.createElement('div');
-  nav.className = 'tours-carousel-nav';
-  var prevBtn = document.createElement('button');
-  prevBtn.className = 'carousel-arrow prev';
-  prevBtn.type = 'button';
-  prevBtn.setAttribute('aria-label', 'הקודם');
-  prevBtn.innerHTML = '&#10094;';
-  var nextBtn = document.createElement('button');
-  nextBtn.className = 'carousel-arrow next';
-  nextBtn.type = 'button';
-  nextBtn.setAttribute('aria-label', 'הבא');
-  nextBtn.innerHTML = '&#10095;';
-  nav.appendChild(prevBtn);
-  nav.appendChild(nextBtn);
-
-  var dotsWrap = document.createElement('div');
-  dotsWrap.className = 'carousel-dots';
-  cards.forEach(function (_, i) {
-    var d = document.createElement('button');
-    d.className = 'dot';
-    d.type = 'button';
-    d.setAttribute('aria-label', 'פריט ' + (i + 1));
-    (function (idx) { d.addEventListener('click', function () { goTo(idx); }); })(i);
-    dotsWrap.appendChild(d);
-  });
-
-  // Insert nav above grid, dots below grid
-  grid.parentNode.insertBefore(nav, grid);
-  grid.parentNode.insertBefore(dotsWrap, grid.nextSibling);
-
-  prevBtn.addEventListener('click', function () { goTo(activeIndex() - 1); });
-  nextBtn.addEventListener('click', function () { goTo(activeIndex() + 1); });
-
-  var ticking = false;
-  grid.addEventListener('scroll', function () {
-    if (!ticking) { window.requestAnimationFrame(function () { update(); ticking = false; }); ticking = true; }
-  });
-
-  // init
-  goTo(0);
-  setTimeout(update, 300);
-  window.addEventListener('resize', update);
+  // Re-init on load (after everything settles)
+  window.addEventListener('load', function(){ initToursCarousel(); });
 })();
     } catch (e) {
       if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
@@ -547,7 +572,24 @@ window.onload = function() {
     __zappyCustomInit();
   }
 })();
-/* ZAPPY_CUSTOM_JS_END:b4cf71ccef2a */
+/* ZAPPY_CUSTOM_JS_END:f4bc1e378939 */
+
+/* ZAPPY_CUSTOM_JS_START:e56afb3e0eda */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function(){ /* replaced: former carousel code disabled to stop duplicating nav arrows */ })();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:e56afb3e0eda */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
