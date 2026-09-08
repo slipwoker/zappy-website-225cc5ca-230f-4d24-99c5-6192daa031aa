@@ -9988,6 +9988,10 @@ html body .home-layout-section .home-layout-section__tour-card--featured { displ
   position: relative !important;
   box-shadow: 0 24px 60px rgba(44, 24, 16, 0.34) !important;
 }
+
+.gallery-section .gallery-card-caption {
+  display: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
