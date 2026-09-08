@@ -9943,6 +9943,22 @@ html body .home-layout-section .home-layout-section__tour-card--featured { displ
   z-index: 2;
   box-shadow: 0 16px 44px rgba(44, 24, 16, 0.28);
 }
+
+.home-layout-section .home-layout-section__tours-grid .home-layout-section__tour-card {
+  transition: transform 0.45s cubic-bezier(.22,.61,.36,1), box-shadow 0.45s ease, opacity 0.45s ease;
+  transform: scale(0.82);
+  opacity: 0.55;
+  flex: 0 0 340px !important;
+  transform-origin: center center;
+}
+
+.home-layout-section .home-layout-section__tours-grid .home-layout-section__tour-card.is-active {
+  transform: scale(1.22) !important;
+  opacity: 1 !important;
+  z-index: 3 !important;
+  position: relative;
+  box-shadow: 0 24px 60px rgba(44, 24, 16, 0.34) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
