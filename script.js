@@ -458,122 +458,6 @@ window.onload = function() {
     }
 })();
 
-/* ZAPPY_CUSTOM_JS_START:f4bc1e378939 */
-(function () {
-  function __zappyCustomInit() {
-    try {
-(function(){
-  function initToursCarousel(){
-    const grid = document.querySelector('#layout-1783519154228 .home-layout-section__tours-grid');
-    if (!grid) return;
-    // Only run once
-    if (grid.dataset.carouselInit === '1') return;
-    grid.dataset.carouselInit = '1';
-
-    const nav = document.querySelector('#layout-1783519154228 .tours-carousel-nav');
-    const dotsWrap = document.querySelector('#layout-1783519154228 .carousel-dots');
-    if (!nav || !dotsWrap) return;
-
-    const prevBtn = nav.querySelector('.carousel-arrow.prev');
-    const nextBtn = nav.querySelector('.carousel-arrow.next');
-    const cards = Array.from(grid.children).filter(function(c){ return c.classList && c.classList.contains('home-layout-section__tour-card'); });
-    if (!cards.length) return;
-
-    // Ensure horizontal scroll layout
-    grid.style.display = 'flex';
-    grid.style.flexWrap = 'nowrap';
-    grid.style.overflowX = 'auto';
-    grid.style.overflowY = 'hidden';
-    grid.style.scrollBehavior = 'smooth';
-    grid.style.scrollSnapType = 'x mandatory';
-
-    cards.forEach(function(c){
-      c.style.flex = '0 0 auto';
-      c.style.scrollSnapAlign = 'start';
-    });
-
-    function currentIndex(){
-      // In RTL, scrollLeft is often negative or reversed; compute based on scroll position
-      var sl = grid.scrollLeft;
-      var max = grid.scrollWidth - grid.clientWidth;
-      if (max <= 0) return 0;
-      // Find nearest card
-      var best = 0, bestDist = Infinity;
-      cards.forEach(function(c, i){
-        var pos = c.offsetLeft;
-        var d = Math.abs(pos - sl);
-        if (d < bestDist){ bestDist = d; best = i; }
-      });
-      return best;
-    }
-
-    function goTo(i){
-      if (i < 0) i = 0;
-      if (i >= cards.length) i = cards.length - 1;
-      var card = cards[i];
-      var target = card.offsetLeft - (grid.clientWidth - card.clientWidth)/2;
-      if (target < 0) target = 0;
-      var max = grid.scrollWidth - grid.clientWidth;
-      if (target > max) target = max;
-      try { grid.scrollTo({ left: target, behavior: 'smooth' }); }
-      catch(e){ grid.scrollLeft = target; }
-      updateDots(i);
-    }
-
-    function updateDots(i){
-      dotsWrap.querySelectorAll('.dot').forEach(function(d, idx){
-        if (idx === i){ d.classList.add('is-active'); }
-        else { d.classList.remove('is-active'); }
-      });
-    }
-
-    if (prevBtn){
-      prevBtn.addEventListener('click', function(){ goTo(currentIndex() - 1); });
-    }
-    if (nextBtn){
-      nextBtn.addEventListener('click', function(){ goTo(currentIndex() + 1); });
-    }
-
-    // Sync dots with existing HTML dots
-    var dots = dotsWrap.querySelectorAll('.dot');
-    if (dots.length){
-      dots.forEach(function(d, idx){
-        d.addEventListener('click', function(){ goTo(idx); });
-      });
-    }
-
-    // Update active dot on manual scroll
-    var scrollTimer;
-    grid.addEventListener('scroll', function(){
-      clearTimeout(scrollTimer);
-      scrollTimer = setTimeout(function(){
-        updateDots(currentIndex());
-      }, 100);
-    });
-
-    updateDots(0);
-  }
-
-  if (document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', initToursCarousel);
-  } else {
-    initToursCarousel();
-  }
-  // Re-init on load (after everything settles)
-  window.addEventListener('load', function(){ initToursCarousel(); });
-})();
-    } catch (e) {
-      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
-    }
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
-  } else {
-    __zappyCustomInit();
-  }
-})();
-/* ZAPPY_CUSTOM_JS_END:f4bc1e378939 */
-
 /* ZAPPY_CUSTOM_JS_START:e56afb3e0eda */
 (function () {
   function __zappyCustomInit() {
@@ -671,6 +555,112 @@ window.onload = function() {
   }
 })();
 /* ZAPPY_CUSTOM_JS_END:57ba158296ab */
+
+/* ZAPPY_CUSTOM_JS_START:b11c1ba9f166 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function(){
+  function initToursCarousel(){
+    const grid = document.querySelector('#layout-1783519154228 .home-layout-section__tours-grid');
+    if (!grid) return;
+    if (grid.dataset.carouselInit === '2') return;
+    grid.dataset.carouselInit = '2';
+
+    const nav = document.querySelector('#layout-1783519154228 .tours-carousel-nav');
+    const dotsWrap = document.querySelector('#layout-1783519154228 .carousel-dots');
+    if (!nav || !dotsWrap) return;
+
+    const prevBtn = nav.querySelector('.carousel-arrow.prev');
+    const nextBtn = nav.querySelector('.carousel-arrow.next');
+    const cards = Array.from(grid.children).filter(function(c){ return c.classList && c.classList.contains('home-layout-section__tour-card'); });
+    if (!cards.length) return;
+
+    grid.style.display = 'flex';
+    grid.style.flexWrap = 'nowrap';
+    grid.style.overflowX = 'auto';
+    grid.style.overflowY = 'hidden';
+    grid.style.scrollBehavior = 'smooth';
+    grid.style.scrollSnapType = 'x mandatory';
+    grid.style.alignItems = 'center';
+
+    cards.forEach(function(c){
+      c.style.flex = '0 0 auto';
+      c.style.scrollSnapAlign = 'center';
+    });
+
+    let active = 0;
+    function setActive(i){
+      if (i < 0) i = 0;
+      if (i >= cards.length) i = cards.length - 1;
+      active = i;
+      cards.forEach(function(c, idx){
+        if (idx === i){ c.classList.add('is-active'); }
+        else { c.classList.remove('is-active'); }
+      });
+      // Sync dots
+      dotsWrap.querySelectorAll('.dot').forEach(function(d, idx){
+        if (idx === i){ d.classList.add('is-active'); }
+        else { d.classList.remove('is-active'); }
+      });
+      // Center the active card
+      var card = cards[i];
+      var target = card.offsetLeft - (grid.clientWidth - card.clientWidth)/2;
+      if (target < 0) target = 0;
+      var max = grid.scrollWidth - grid.clientWidth;
+      if (target > max) target = max;
+      try { grid.scrollTo({ left: target, behavior: 'smooth' }); }
+      catch(e){ grid.scrollLeft = target; }
+    }
+
+    if (prevBtn){ prevBtn.addEventListener('click', function(){ setActive(active - 1); }); }
+    if (nextBtn){ nextBtn.addEventListener('click', function(){ setActive(active + 1); }); }
+
+    dotsWrap.querySelectorAll('.dot').forEach(function(d, idx){
+      d.addEventListener('click', function(){ setActive(idx); });
+    });
+
+    // Update active on manual scroll (snap to nearest card)
+    var scrollTimer;
+    grid.addEventListener('scroll', function(){
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(function(){
+        var best = 0, bestDist = Infinity;
+        cards.forEach(function(c, i){
+          var d = Math.abs((c.offsetLeft + c.clientWidth/2) - (grid.scrollLeft + grid.clientWidth/2));
+          if (d < bestDist){ bestDist = d; best = i; }
+        });
+        cards.forEach(function(c, idx){
+          if (idx === best){ c.classList.add('is-active'); }
+          else { c.classList.remove('is-active'); }
+        });
+        active = best;
+        dotsWrap.querySelectorAll('.dot').forEach(function(d, idx){
+          if (idx === best){ d.classList.add('is-active'); }
+          else { d.classList.remove('is-active'); }
+        });
+      }, 100);
+    });
+
+    // Start with first card active
+    setActive(0);
+  }
+
+  if (document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', initToursCarousel); }
+  else { initToursCarousel(); }
+  window.addEventListener('load', function(){ initToursCarousel(); });
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:b11c1ba9f166 */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
