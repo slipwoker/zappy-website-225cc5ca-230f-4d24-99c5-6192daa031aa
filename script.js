@@ -556,99 +556,82 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:57ba158296ab */
 
-/* ZAPPY_CUSTOM_JS_START:b11c1ba9f166 */
+/* ZAPPY_CUSTOM_JS_START:428cdd92a12d */
 (function () {
   function __zappyCustomInit() {
     try {
 (function(){
-  function initToursCarousel(){
-    const grid = document.querySelector('#layout-1783519154228 .home-layout-section__tours-grid');
+  function init(){
+    var grid = document.getElementById('zappy-auto-grid-1783519827170-vy755u');
     if (!grid) return;
-    if (grid.dataset.carouselInit === '2') return;
-    grid.dataset.carouselInit = '2';
+    if (grid.dataset.centeredInit === '1') return;
+    grid.dataset.centeredInit = '1';
 
-    const nav = document.querySelector('#layout-1783519154228 .tours-carousel-nav');
-    const dotsWrap = document.querySelector('#layout-1783519154228 .carousel-dots');
+    var nav = document.querySelector('#layout-1783519154228 .tours-carousel-nav');
+    var dotsWrap = document.querySelector('#layout-1783519154228 .carousel-dots');
     if (!nav || !dotsWrap) return;
 
-    const prevBtn = nav.querySelector('.carousel-arrow.prev');
-    const nextBtn = nav.querySelector('.carousel-arrow.next');
-    const cards = Array.from(grid.children).filter(function(c){ return c.classList && c.classList.contains('home-layout-section__tour-card'); });
+    var prevBtn = nav.querySelector('.carousel-arrow.prev');
+    var nextBtn = nav.querySelector('.carousel-arrow.next');
+    var cards = Array.prototype.filter.call(grid.children, function(c){
+      return c.classList.contains('home-layout-section__tour-card');
+    });
     if (!cards.length) return;
 
-    grid.style.display = 'flex';
-    grid.style.flexWrap = 'nowrap';
-    grid.style.overflowX = 'auto';
-    grid.style.overflowY = 'hidden';
-    grid.style.scrollBehavior = 'smooth';
-    grid.style.scrollSnapType = 'x mandatory';
-    grid.style.alignItems = 'center';
+    var dots = Array.prototype.slice.call(dotsWrap.querySelectorAll('.dot'));
 
-    cards.forEach(function(c){
-      c.style.flex = '0 0 auto';
-      c.style.scrollSnapAlign = 'center';
-    });
+    var active = 0;
 
-    let active = 0;
-    function setActive(i){
+    function centerCard(i){
       if (i < 0) i = 0;
       if (i >= cards.length) i = cards.length - 1;
       active = i;
-      cards.forEach(function(c, idx){
-        if (idx === i){ c.classList.add('is-active'); }
-        else { c.classList.remove('is-active'); }
-      });
-      // Sync dots
-      dotsWrap.querySelectorAll('.dot').forEach(function(d, idx){
-        if (idx === i){ d.classList.add('is-active'); }
-        else { d.classList.remove('is-active'); }
-      });
-      // Center the active card
+      cards.forEach(function(c, idx){ c.classList.toggle('is-active', idx === i); });
+      dots.forEach(function(d, idx){ d.classList.toggle('is-active', idx === i); });
+
       var card = cards[i];
-      var target = card.offsetLeft - (grid.clientWidth - card.clientWidth)/2;
-      if (target < 0) target = 0;
-      var max = grid.scrollWidth - grid.clientWidth;
-      if (target > max) target = max;
+      // Always center the active card, with padding so edges are reachable
+      var pad = 24;
+      var target = card.offsetLeft - (grid.clientWidth - card.clientWidth) / 2;
+      // Allow full centering even for first/last by not clamping hard;
+      // scrollLeft naturally clamps to 0 / max, but center is still attempted.
       try { grid.scrollTo({ left: target, behavior: 'smooth' }); }
       catch(e){ grid.scrollLeft = target; }
     }
 
-    if (prevBtn){ prevBtn.addEventListener('click', function(){ setActive(active - 1); }); }
-    if (nextBtn){ nextBtn.addEventListener('click', function(){ setActive(active + 1); }); }
+    function next(){ centerCard(active + 1); }
+    function prev(){ centerCard(active - 1); }
 
-    dotsWrap.querySelectorAll('.dot').forEach(function(d, idx){
-      d.addEventListener('click', function(){ setActive(idx); });
+    if (nextBtn) nextBtn.addEventListener('click', next);
+    if (prevBtn) prevBtn.addEventListener('click', prev);
+
+    dots.forEach(function(d, idx){
+      d.addEventListener('click', function(){ centerCard(idx); });
     });
 
-    // Update active on manual scroll (snap to nearest card)
-    var scrollTimer;
+    // On manual scroll, detect nearest card and make it the centered active one
+    var t;
     grid.addEventListener('scroll', function(){
-      clearTimeout(scrollTimer);
-      scrollTimer = setTimeout(function(){
+      clearTimeout(t);
+      t = setTimeout(function(){
+        var center = grid.scrollLeft + grid.clientWidth / 2;
         var best = 0, bestDist = Infinity;
         cards.forEach(function(c, i){
-          var d = Math.abs((c.offsetLeft + c.clientWidth/2) - (grid.scrollLeft + grid.clientWidth/2));
+          var d = Math.abs((c.offsetLeft + c.clientWidth / 2) - center);
           if (d < bestDist){ bestDist = d; best = i; }
         });
-        cards.forEach(function(c, idx){
-          if (idx === best){ c.classList.add('is-active'); }
-          else { c.classList.remove('is-active'); }
-        });
         active = best;
-        dotsWrap.querySelectorAll('.dot').forEach(function(d, idx){
-          if (idx === best){ d.classList.add('is-active'); }
-          else { d.classList.remove('is-active'); }
-        });
-      }, 100);
+        cards.forEach(function(c, idx){ c.classList.toggle('is-active', idx === best); });
+        dots.forEach(function(d, idx){ d.classList.toggle('is-active', idx === best); });
+      }, 120);
     });
 
-    // Start with first card active
-    setActive(0);
+    centerCard(0);
   }
 
-  if (document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', initToursCarousel); }
-  else { initToursCarousel(); }
-  window.addEventListener('load', function(){ initToursCarousel(); });
+  if (document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', init); }
+  else { init(); }
+  window.addEventListener('load', init);
 })();
     } catch (e) {
       if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
@@ -660,7 +643,7 @@ window.onload = function() {
     __zappyCustomInit();
   }
 })();
-/* ZAPPY_CUSTOM_JS_END:b11c1ba9f166 */
+/* ZAPPY_CUSTOM_JS_END:428cdd92a12d */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
