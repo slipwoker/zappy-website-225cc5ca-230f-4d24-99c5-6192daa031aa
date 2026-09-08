@@ -591,6 +591,87 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:e56afb3e0eda */
 
+/* ZAPPY_CUSTOM_JS_START:57ba158296ab */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function () {
+  var section = document.getElementById('layout-1783519154228');
+  if (!section) return;
+
+  var grid = section.querySelector('.home-layout-section__tours-grid');
+  var prev = section.querySelector('.tours-carousel-nav .carousel-arrow.prev');
+  var next = section.querySelector('.tours-carousel-nav .carousel-arrow.next');
+  var dots = Array.prototype.slice.call(section.querySelectorAll('.carousel-dots .dot'));
+
+  if (!grid) return;
+
+  var cards = Array.prototype.slice.call(grid.children);
+  var visibleCount = 3; // number of cards shown at a time on desktop
+  var index = 0;
+
+  function updateVisibleCount() {
+    if (window.innerWidth <= 768) { visibleCount = 1; }
+    else if (window.innerWidth <= 1024) { visibleCount = 2; }
+    else { visibleCount = 3; }
+  }
+
+  function maxIndex() {
+    return Math.max(0, cards.length - visibleCount);
+  }
+
+  function render() {
+    index = Math.max(0, Math.min(index, maxIndex()));
+    cards.forEach(function (card, i) {
+      var show = i >= index && i < index + visibleCount;
+      card.style.display = show ? '' : 'none';
+    });
+    if (dots.length) {
+      dots.forEach(function (d, i) {
+        d.classList.toggle('is-active', i === index);
+      });
+    }
+    if (prev) prev.disabled = index <= 0;
+    if (next) next.disabled = index >= maxIndex();
+  }
+
+  function go(dir) {
+    updateVisibleCount();
+    index = index + dir;
+    render();
+  }
+
+  if (prev) prev.addEventListener('click', function () { go(-1); });
+  if (next) next.addEventListener('click', function () { go(1); });
+
+  dots.forEach(function (d, i) {
+    d.addEventListener('click', function () {
+      updateVisibleCount();
+      index = Math.min(i, maxIndex());
+      render();
+    });
+  });
+
+  window.addEventListener('resize', function () {
+    updateVisibleCount();
+    render();
+  });
+
+  updateVisibleCount();
+  render();
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:57ba158296ab */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
