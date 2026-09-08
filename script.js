@@ -458,6 +458,97 @@ window.onload = function() {
     }
 })();
 
+/* ZAPPY_CUSTOM_JS_START:b4cf71ccef2a */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function () {
+  var section = document.querySelector('.home-layout-section');
+  if (!section) return;
+  var grid = section.querySelector('.home-layout-section__tours-grid');
+  if (!grid) return;
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.home-layout-section__tour-card'));
+  if (cards.length < 2) return;
+
+  function activeIndex() {
+    var center = grid.scrollLeft + grid.clientWidth / 2;
+    var best = 0, bestDist = Infinity;
+    cards.forEach(function (c, i) {
+      var d = Math.abs((c.offsetLeft + c.offsetWidth / 2) - center);
+      if (d < bestDist) { bestDist = d; best = i; }
+    });
+    return best;
+  }
+
+  function goTo(i) {
+    i = Math.max(0, Math.min(cards.length - 1, i));
+    var c = cards[i];
+    grid.scrollTo({ left: c.offsetLeft + c.offsetWidth / 2 - grid.clientWidth / 2, behavior: 'smooth' });
+  }
+
+  function update() {
+    var a = activeIndex();
+    cards.forEach(function (c, i) { c.classList.toggle('is-active', i === a); });
+    var dots = grid.parentNode.querySelectorAll('.carousel-dots .dot');
+    dots.forEach(function (d, i) { d.classList.toggle('is-active', i === a); });
+  }
+
+  // Build nav (arrows + dots) before the grid
+  var nav = document.createElement('div');
+  nav.className = 'tours-carousel-nav';
+  var prevBtn = document.createElement('button');
+  prevBtn.className = 'carousel-arrow prev';
+  prevBtn.type = 'button';
+  prevBtn.setAttribute('aria-label', 'הקודם');
+  prevBtn.innerHTML = '&#10094;';
+  var nextBtn = document.createElement('button');
+  nextBtn.className = 'carousel-arrow next';
+  nextBtn.type = 'button';
+  nextBtn.setAttribute('aria-label', 'הבא');
+  nextBtn.innerHTML = '&#10095;';
+  nav.appendChild(prevBtn);
+  nav.appendChild(nextBtn);
+
+  var dotsWrap = document.createElement('div');
+  dotsWrap.className = 'carousel-dots';
+  cards.forEach(function (_, i) {
+    var d = document.createElement('button');
+    d.className = 'dot';
+    d.type = 'button';
+    d.setAttribute('aria-label', 'פריט ' + (i + 1));
+    (function (idx) { d.addEventListener('click', function () { goTo(idx); }); })(i);
+    dotsWrap.appendChild(d);
+  });
+
+  // Insert nav above grid, dots below grid
+  grid.parentNode.insertBefore(nav, grid);
+  grid.parentNode.insertBefore(dotsWrap, grid.nextSibling);
+
+  prevBtn.addEventListener('click', function () { goTo(activeIndex() - 1); });
+  nextBtn.addEventListener('click', function () { goTo(activeIndex() + 1); });
+
+  var ticking = false;
+  grid.addEventListener('scroll', function () {
+    if (!ticking) { window.requestAnimationFrame(function () { update(); ticking = false; }); ticking = true; }
+  });
+
+  // init
+  goTo(0);
+  setTimeout(update, 300);
+  window.addEventListener('resize', update);
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:b4cf71ccef2a */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){

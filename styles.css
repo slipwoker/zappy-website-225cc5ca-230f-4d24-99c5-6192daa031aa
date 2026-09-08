@@ -9770,6 +9770,91 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   line-height: 1.7 !important;
 }
 }
+
+.home-layout-section .home-layout-section__tours-grid {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  scroll-snap-type: x mandatory !important;
+  gap: 24px !important;
+  scroll-behavior: smooth;
+  align-items: center;
+  padding: 20px 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.home-layout-section .home-layout-section__tours-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.home-layout-section .home-layout-section__tour-card {
+  flex: 0 0 340px !important;
+  max-width: 340px !important;
+  scroll-snap-align: center;
+  transition: transform 0.45s ease, opacity 0.45s ease, filter 0.45s ease;
+  opacity: 0.45;
+  filter: grayscale(0.6);
+  transform: scale(0.88);
+}
+
+.home-layout-section .home-layout-section__tour-card.is-active {
+  opacity: 1;
+  filter: grayscale(0);
+  transform: scale(1.02);
+  z-index: 2;
+  box-shadow: 0 16px 48px rgba(44, 24, 16, 0.28);
+}
+
+.home-layout-section .tours-carousel-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.home-layout-section .carousel-arrow {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 168, 83, 0.4);
+  background: #F5EFE0;
+  color: #2C1810;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.home-layout-section .carousel-arrow:hover {
+  background: #C8963E;
+  color: #fff;
+}
+
+.home-layout-section .carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.home-layout-section .carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #C8963E;
+  opacity: 0.35;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.home-layout-section .carousel-dots .dot.is-active {
+  opacity: 1;
+  transform: scale(1.3);
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
