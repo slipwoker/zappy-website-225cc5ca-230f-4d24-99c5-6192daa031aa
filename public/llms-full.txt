@@ -2,13 +2,13 @@
 
 A certified tour guide with over 20 years of experience offering a rich variety of experiential tours, ceremonial participations, and educational lectures. The brand centers around deep cultural and personal immersion, combining knowledge with hands-on experiences. The tone is professional yet warm, rooted in years of expertise and passion for sharing meaningful journeys.
 
-Source: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com
+Source: https://TheJerusalemDream.Co.il
 
 ---
 
 ## גלו את הקסם הנסתר של ירושלים — חלום ירושלים
 
-URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com
+URL: https://TheJerusalemDream.Co.il
 Description: צללו לחוויה בלתי נשכחת עם מורה דרך מוסמך בעל ניסיון של 20 שנה. סיורים, טקסים והרצאות שמחברים אתכם לעומק התרבותי של ירושלים. הזמינו את המסע שלכם עוד היום!
 
 גלו את הקסם הנסתר של ירושלים — חלום ירושלים                                                         דלג לתוכן הראשי                          - אודות
@@ -159,7 +159,7 @@ Description: צללו לחוויה בלתי נשכחת עם מורה דרך מו
 
 ## צעדו בסמטאות העתיקות והרגישו את ההיסטוריה — חלום ירושלים
 
-URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/three-religions
+URL: https://TheJerusalemDream.Co.il/three-religions
 Description: הצטרפו לסיורי עומק חווייתיים בירושלים, מהעיר העתיקה ועד הר הזיתים. כל מסלול נארג בתשוקה לחשוף רבדים נסתרים של תרבות ואמונה. בואו לחוות את העיר מחדש!
 
 קדושת ירושלים לשלוש הדתות
@@ -436,9 +436,9 @@ Description: הצטרפו לסיורי עומק חווייתיים בירושל�
 
 ---
 
-## https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/sanctity-of-jerusalem-in-judaism
+## https://TheJerusalemDream.Co.il/sanctity-of-jerusalem-in-judaism
 
-URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/sanctity-of-jerusalem-in-judaism
+URL: https://TheJerusalemDream.Co.il/sanctity-of-jerusalem-in-judaism
 
 התקדשות ירושלים ביהדות
 
@@ -716,7 +716,7 @@ URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/sanctity-of-jerusal
 
 ## התחברו לרגעים מקודשים ולסיפורים נדירים — חלום ירושלים
 
-URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/ceremonies-page
+URL: https://TheJerusalemDream.Co.il/ceremonies-page
 Description: גלו את עומק המסורת בטקס האפיפאנייה המרגש או בהרצאות מרתקות על קהילת ביתא ישראל. חוויה לימודית ורוחנית המשלבת ידע נדיר עם חיבור אישי. הצטרפו למסע יוצא דופן!
 
 טקסים עמוד
@@ -1105,9 +1105,9 @@ Description: גלו את עומק המסורת בטקס האפיפאנייה ה�
 
 ---
 
-## https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/lectures-column
+## https://TheJerusalemDream.Co.il/lectures-column
 
-URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/lectures-column
+URL: https://TheJerusalemDream.Co.il/lectures-column
 
 הרצאות עמוד
 
@@ -1190,7 +1190,7 @@ This page is ready for your content.
 
 ## מדיניות פרטיות
 
-URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/privacy
+URL: https://TheJerusalemDream.Co.il/privacy
 Description: מדיניות הפרטיות שלנו - כיצד אנו אוספים, משתמשים ומגנים על המידע שלכם
 
 מדיניות פרטיות
@@ -1371,7 +1371,7 @@ Description: מדיניות הפרטיות שלנו - כיצד אנו אוספי
 
 ## הצהרת נגישות
 
-URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/accessibility
+URL: https://TheJerusalemDream.Co.il/accessibility
 Description: הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית
 
 הצהרת נגישות
@@ -1561,7 +1561,7 @@ Description: הצהרת הנגישות שלנו - מחויבותנו לנגיש�
 
 ## תנאי שימוש
 
-URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/terms
+URL: https://TheJerusalemDream.Co.il/terms
 Description: תנאי השימוש באתר - הזכויות והחובות של המשתמשים
 
 תנאי שימוש
@@ -1770,7 +1770,7 @@ Description: תנאי השימוש באתר - הזכויות והחובות של
 
 ## תודה שפניתם אלינו
 
-URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/thank-you
+URL: https://TheJerusalemDream.Co.il/thank-you
 Description: חלום ירושלים - תודה שפניתם אלינו
 
 תודה שפניתם אלינו
@@ -1902,7 +1902,7 @@ Description: חלום ירושלים - תודה שפניתם אלינו
 
 ## המסע המושלם שלכם מתחיל בשיחה אחת — חלום ירושלים
 
-URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/contact
+URL: https://TheJerusalemDream.Co.il/contact
 Description: מוכנים לצאת להרפתקה תרבותית עמוקה? צרו קשר עוד היום כדי לתכנן סיור מותאם אישית, להזמין הרצאה או להשתתף בטקס ייחודי. אנחנו כאן כדי להגשים את חלום ירושלים שלכם!
 
 המסע המושלם שלכם מתחיל בשיחה אחת — חלום ירושלים

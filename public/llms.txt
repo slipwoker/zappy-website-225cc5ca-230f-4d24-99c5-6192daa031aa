@@ -7,55 +7,55 @@
 ## Pages
 
 ### גלו את הקסם הנסתר של ירושלים — חלום ירושלים
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com
+https://TheJerusalemDream.Co.il
 צללו לחוויה בלתי נשכחת עם מורה דרך מוסמך בעל ניסיון של 20 שנה. סיורים, טקסים והרצאות שמחברים אתכם לעומק התרבותי של ירושלים. הזמינו את המסע שלכם עוד היום!
 
 ### Page
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/menu-group-1783849504641
+https://TheJerusalemDream.Co.il/menu-group-1783849504641
 
 ### Page
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/menu-group-1783851951101
+https://TheJerusalemDream.Co.il/menu-group-1783851951101
 
 ### צעדו בסמטאות העתיקות והרגישו את ההיסטוריה — חלום ירושלים
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/three-religions
+https://TheJerusalemDream.Co.il/three-religions
 הצטרפו לסיורי עומק חווייתיים בירושלים, מהעיר העתיקה ועד הר הזיתים. כל מסלול נארג בתשוקה לחשוף רבדים נסתרים של תרבות ואמונה. בואו לחוות את העיר מחדש!
 
 ### Page
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/sanctity-of-jerusalem-in-judaism
+https://TheJerusalemDream.Co.il/sanctity-of-jerusalem-in-judaism
 
 ### Page
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/menu-group-1783849342215
+https://TheJerusalemDream.Co.il/menu-group-1783849342215
 
 ### התחברו לרגעים מקודשים ולסיפורים נדירים — חלום ירושלים
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/ceremonies-page
+https://TheJerusalemDream.Co.il/ceremonies-page
 גלו את עומק המסורת בטקס האפיפאנייה המרגש או בהרצאות מרתקות על קהילת ביתא ישראל. חוויה לימודית ורוחנית המשלבת ידע נדיר עם חיבור אישי. הצטרפו למסע יוצא דופן!
 
 ### Page
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/menu-group-1783849107328
+https://TheJerusalemDream.Co.il/menu-group-1783849107328
 
 ### Page
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/lectures-column
+https://TheJerusalemDream.Co.il/lectures-column
 
 ### תודה שפניתם אלינו
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/thank-you
+https://TheJerusalemDream.Co.il/thank-you
 חלום ירושלים - תודה שפניתם אלינו
 
 ### המסע המושלם שלכם מתחיל בשיחה אחת — חלום ירושלים
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/contact
+https://TheJerusalemDream.Co.il/contact
 מוכנים לצאת להרפתקה תרבותית עמוקה? צרו קשר עוד היום כדי לתכנן סיור מותאם אישית, להזמין הרצאה או להשתתף בטקס ייחודי. אנחנו כאן כדי להגשים את חלום ירושלים שלכם!
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/privacy
+https://TheJerusalemDream.Co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/terms
+https://TheJerusalemDream.Co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/accessibility
+https://TheJerusalemDream.Co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -68,8 +68,8 @@ Information about WCAG compliance and accessibility features.
 - Address: קורא הדורות 23, ירושלים
 
 ### Contact form
-- URL: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/contact
-- Endpoint: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/api/email/contact-form
+- URL: https://TheJerusalemDream.Co.il/contact
+- Endpoint: https://TheJerusalemDream.Co.il/api/email/contact-form
 - Method: POST
 - Content-Type: application/json
 - Fields:
@@ -106,6 +106,6 @@ Tourism & Guided Tours
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/sitemap.xml
-- Robots: https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/robots.txt
-- Flattened page text (for LLMs): https://zappy-site-225cc5ca-230f-4d24-99c5.onrender.com/llms-full.txt
+- Sitemap (XML): https://TheJerusalemDream.Co.il/sitemap.xml
+- Robots: https://TheJerusalemDream.Co.il/robots.txt
+- Flattened page text (for LLMs): https://TheJerusalemDream.Co.il/llms-full.txt
