@@ -10418,6 +10418,123 @@ html body .home-layout-section .home-layout-section__tour-card--featured { displ
   top: auto;
   right: auto;
 }
+
+#layout-1783581881337 .about-text-panel {
+  background: #FBF6EA !important;
+  border: 1px solid rgba(214,162,58,0.25);
+}
+
+#layout-1783581881337 .pz-1 {
+  width: 24%;
+  height: 36%;
+  top: 5%;
+  left: 1%;
+  right: auto;
+  transform: rotate(-3.5deg);
+}
+
+#layout-1783581881337 .pz-2 {
+  width: 22%;
+  height: 33%;
+  top: 3%;
+  right: 2%;
+  left: auto;
+  transform: rotate(2.5deg);
+}
+
+#layout-1783581881337 .pz-3 {
+  width: 20%;
+  height: 31%;
+  top: 40%;
+  right: 16%;
+  left: auto;
+  transform: rotate(-2deg);
+}
+
+#layout-1783581881337 .pz-4 {
+  width: 21%;
+  height: 32%;
+  top: 46%;
+  left: 12%;
+  right: auto;
+  transform: rotate(1.5deg);
+}
+
+#layout-1783581881337 .pz-5 {
+  width: 23%;
+  height: 34%;
+  bottom: 4%;
+  right: 1%;
+  left: auto;
+  top: auto;
+  transform: rotate(3deg);
+}
+
+#layout-1783581881337 .pz-6 {
+  width: 20%;
+  height: 30%;
+  bottom: 3%;
+  left: 2%;
+  right: auto;
+  top: auto;
+  transform: rotate(-2.5deg);
+}
+
+#layout-1783581881337 .pz-7 {
+  width: 17%;
+  height: 26%;
+  top: 12%;
+  right: 12%;
+  left: auto;
+  transform: rotate(-4deg);
+}
+
+#layout-1783581881337 .pz-8 {
+  width: 17%;
+  height: 26%;
+  top: 14%;
+  left: 20%;
+  right: auto;
+  transform: rotate(3deg);
+}
+
+#layout-1783581881337 .pz-9 {
+  width: 16%;
+  height: 23%;
+  top: 55%;
+  left: 24%;
+  right: auto;
+  transform: rotate(-3deg);
+}
+
+#layout-1783581881337 .pz-10 {
+  width: 16%;
+  height: 23%;
+  top: 58%;
+  right: 24%;
+  left: auto;
+  transform: rotate(2.5deg);
+}
+
+#layout-1783581881337 .pz-11 {
+  width: 16%;
+  height: 22%;
+  bottom: 12%;
+  right: 38%;
+  left: auto;
+  top: auto;
+  transform: rotate(-2deg);
+}
+
+#layout-1783581881337 .pz-12 {
+  width: 16%;
+  height: 22%;
+  bottom: 10%;
+  left: 40%;
+  right: auto;
+  top: auto;
+  transform: rotate(3.5deg);
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
