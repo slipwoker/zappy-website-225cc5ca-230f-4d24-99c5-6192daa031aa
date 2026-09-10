@@ -11096,6 +11096,20 @@ html body .home-layout-section .home-layout-section__tour-card--featured { displ
   grid-area: 3 / 4 / 4 / 5;
   background-image: url('assets/image-tourism-guided-tours-media-upload-upload-1788858648376-dh64fo.webp') !important;
 }
+
+#layout-1783519154228 .home-layout-section__tour-card--featured .zappy-carousel-container-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 16 / 7 !important;
+}
+
+#layout-1783519154228 .home-layout-section__tour-card--featured .home-layout-section__tour-image-wrapper {
+  width: 100% !important;
+}
+
+#layout-1783519154228 .home-layout-section__about .zappy-carousel-container-wrapper {
+  z-index: 1;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
