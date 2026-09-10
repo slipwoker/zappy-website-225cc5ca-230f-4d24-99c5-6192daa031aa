@@ -10535,6 +10535,65 @@ html body .home-layout-section .home-layout-section__tour-card--featured { displ
   top: auto;
   transform: rotate(3.5deg);
 }
+
+#layout-1783581881337 [data-grid-item-index="0"]::after {
+  display: none !important;
+  content: none !important;
+}
+
+#layout-1783581881337 .about-text-panel {
+  position: relative;
+  z-index: 5;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 48px 44px;
+  background: #FBF6EA !important;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(44,24,16,0.15);
+  text-align: right;
+}
+
+#layout-1783581881337 .about-text-panel h2 {
+  font-family: 'Frank Ruhl Libre', 'Noto Serif Hebrew', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2C1810;
+  text-align: center;
+  margin: 0 0 6px 0;
+}
+
+#layout-1783581881337 .about-text-panel .about-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #6B5A45;
+  margin: 0 0 14px 0;
+}
+
+#layout-1783581881337 .about-text-panel .about-accent-line {
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color, var(--accent, #D6A23A));
+  margin: 0 auto 22px auto;
+  border-radius: 2px;
+}
+
+#layout-1783581881337 .about-text-panel .about-body {
+  font-family: 'Heebo', 'Assistant', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #4A3728;
+  margin: 0;
+  text-align: right;
+}
+
+#layout-1783581881337 .about-text-panel .about-body,
+#layout-1783581881337 .about-text-panel .about-body b {
+  display: inline !important;
+  width: auto !important;
+  max-width: none !important;
+  position: static !important;
+  float: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
