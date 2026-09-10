@@ -11005,6 +11005,97 @@ html body .home-layout-section .home-layout-section__tour-card--featured { displ
 #layout-1783581881337 { min-height: 620px !important; }
 #layout-1783581881337 { align-items: stretch !important; }
 
+
+#layout-1783581881337 .puzzle-collage {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  grid-template-rows: repeat(3, 1fr) !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0 !important;
+  gap: 0 !important;
+  overflow: hidden !important;
+}
+
+#layout-1783581881337 .puzzle-collage .pz {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+#layout-1783581881337 .pz-1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-image: url('assets/tourism-guided-tours-section-Home-layout-home-layout-image-1.webp') !important;
+}
+
+#layout-1783581881337 .pz-2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-image: url('assets/tourism-guided-tours-section-Home-layout-home-layout-image-2.webp') !important;
+}
+
+#layout-1783581881337 .pz-3 {
+  grid-area: 1 / 3 / 2 / 4;
+  background-image: url('assets/tourism-guided-tours-section-Home-layout-home-layout-image-3.webp') !important;
+}
+
+#layout-1783581881337 .pz-4 {
+  grid-area: 1 / 4 / 2 / 5;
+  background-image: url('assets/tourism-guided-tours-section-Home-layout-home-layout-image-4.webp') !important;
+}
+
+#layout-1783581881337 .pz-5 {
+  grid-area: 2 / 1 / 3 / 2;
+  background-image: url('assets/tourism-guided-tours-section-Home-layout-home-layout-image-7.webp') !important;
+}
+
+#layout-1783581881337 .pz-6 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-image: url('assets/tourism-guided-tours-section-Home-layout-home-layout-image-8.webp') !important;
+}
+
+#layout-1783581881337 .pz-7 {
+  grid-area: 2 / 3 / 3 / 4;
+  background-image: url('assets/image-tourism-guided-tours-media-upload-upload-1788863558881-uyfimf.webp') !important;
+}
+
+#layout-1783581881337 .pz-8 {
+  grid-area: 2 / 4 / 3 / 5;
+  background-image: url('assets/image-tourism-guided-tours-media-upload-upload-1788864816449-yq7f6e.webp') !important;
+}
+
+#layout-1783581881337 .pz-9 {
+  grid-area: 3 / 1 / 4 / 2;
+  background-image: url('assets/image-1783584489824-z368h9.webp?v=1783584494146') !important;
+}
+
+#layout-1783581881337 .pz-10 {
+  grid-area: 3 / 2 / 4 / 3;
+  background-image: url('assets/business-general-hero-upload-1783069055003-a39iow.webp?v=1783069058308') !important;
+}
+
+#layout-1783581881337 .pz-11 {
+  grid-area: 3 / 3 / 4 / 4;
+  background-image: url('assets/attached-1783582028575-j3a1cq.webp?v=1783582028575') !important;
+}
+
+#layout-1783581881337 .pz-12 {
+  grid-area: 3 / 4 / 4 / 5;
+  background-image: url('assets/image-tourism-guided-tours-media-upload-upload-1788858648376-dh64fo.webp') !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
