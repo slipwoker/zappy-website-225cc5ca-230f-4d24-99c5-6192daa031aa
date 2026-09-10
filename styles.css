@@ -11110,6 +11110,16 @@ html body .home-layout-section .home-layout-section__tour-card--featured { displ
 #layout-1783519154228 .home-layout-section__about .zappy-carousel-container-wrapper {
   z-index: 1;
 }
+
+#layout-1783519154228 #zappy-carousel-1788858424773-20gegn {
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 16 / 7 !important;
+}
+
+#layout-1783519154228 .home-layout-section__tour-card--featured .home-layout-section__tour-image-wrapper {
+  width: 100% !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
