@@ -11120,6 +11120,32 @@ html body .home-layout-section .home-layout-section__tour-card--featured { displ
 #layout-1783519154228 .home-layout-section__tour-card--featured .home-layout-section__tour-image-wrapper {
   width: 100% !important;
 }
+
+#layout-1783519154228 .home-layout-section__tour-card--featured {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  max-width: 900px !important;
+  margin: 0 auto 48px auto !important;
+}
+
+#layout-1783519154228 .home-layout-section__tour-card--featured .home-layout-section__tour-image-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+}
+
+#layout-1783519154228 .home-layout-section__tour-card--featured .home-layout-section__tour-image-wrapper > div,
+#layout-1783519154228 .home-layout-section__tour-card--featured .home-layout-section__tour-image-wrapper .zappy-carousel-container-wrapper,
+#layout-1783519154228 .home-layout-section__tour-card--featured #zappy-carousel-1788858424773-20gegn {
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+}
+
+#layout-1783519154228 .home-layout-section__tour-card--featured .home-layout-section__tour-content {
+  padding: 32px 36px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
