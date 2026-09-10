@@ -10898,6 +10898,51 @@ html body .home-layout-section .home-layout-section__tour-card--featured { displ
   margin: 0;
   padding: 0;
 }
+
+#layout-1783581881337 {
+  position: relative;
+}
+
+#layout-1783581881337 .container {
+  position: relative;
+  max-width: none;
+  padding: 0;
+}
+
+#layout-1783581881337 .puzzle-collage {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#layout-1783581881337 .puzzle-collage .pz {
+  position: relative;
+  inset: auto;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: none;
+  transform: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+#layout-1783581881337 .about-text-panel {
+  position: relative;
+  z-index: 2;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
