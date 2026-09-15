@@ -11146,6 +11146,10 @@ html body .home-layout-section .home-layout-section__tour-card--featured { displ
 #layout-1783519154228 .home-layout-section__tour-card--featured .home-layout-section__tour-content {
   padding: 32px 36px !important;
 }
+
+#layout-1783581881337 .pz-8 {
+  background-image: url('assets/attached-1789456736318-jbga6w.webp?v=1789456736318') !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
