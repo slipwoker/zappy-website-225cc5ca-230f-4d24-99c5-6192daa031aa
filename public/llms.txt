@@ -20,8 +20,11 @@ https://TheJerusalemDream.Co.il/three-religions
 ### Page
 https://TheJerusalemDream.Co.il/sanctification-of-jerusalem-in-judaism
 
-### התקדשות ירושלים בנצרות
+### Page
 https://TheJerusalemDream.Co.il/sanctity-of-jerusalem-in-christianity
+
+### Page
+https://TheJerusalemDream.Co.il/copy
 
 ### Page
 https://TheJerusalemDream.Co.il/menu-group-1789562473499
@@ -70,7 +73,7 @@ Information about WCAG compliance and accessibility features.
   - `email` (email, required)
   - `phone` (tel, required)
   - `message` (textarea, required)
-  - `privacy_consent` (checkbox, required)
+  - `privacy_consent` (checkbox)
 
 ---
 

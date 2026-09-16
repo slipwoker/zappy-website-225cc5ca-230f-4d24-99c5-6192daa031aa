@@ -92,6 +92,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://TheJerusalemDream.Co.il/sanctity-of-jerusalem-in-christianity" />
   </url>
   <url>
+    <loc>https://TheJerusalemDream.Co.il/copy</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://TheJerusalemDream.Co.il/copy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://TheJerusalemDream.Co.il/en/copy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://TheJerusalemDream.Co.il/copy" />
+  </url>
+  <url>
+    <loc>https://TheJerusalemDream.Co.il/en/copy</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://TheJerusalemDream.Co.il/copy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://TheJerusalemDream.Co.il/en/copy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://TheJerusalemDream.Co.il/copy" />
+  </url>
+  <url>
     <loc>https://TheJerusalemDream.Co.il/menu-group-1789562473499</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
