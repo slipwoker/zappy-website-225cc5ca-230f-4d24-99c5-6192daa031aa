@@ -1,10 +1,10 @@
 # Clean URL redirects for Render static hosting
-# Generated: 2026-09-16T09:15:47.303Z
+# Generated: 2026-09-16T11:37:40.505Z
 # NOTE: Render uses render.yaml for routing, not _redirects (that is Netlify)
 # This file is kept for reference only
 
 /three-religions  /three-religions.html  200!
-/copy  /copy.html  200!
+/sanctification-of-jerusalem-in-judaism  /sanctification-of-jerusalem-in-judaism.html  200!
 /lectures-column  /lectures-column.html  200!
 /privacy  /privacy.html  200!
 /accessibility  /accessibility.html  200!
@@ -15,7 +15,7 @@
 # Language slug rewrites for SEO
 /en  /en/index.html  200!
 /en/three-religions  /en/three-religions.html  200!
-/en/copy  /en/copy.html  200!
+/en/sanctification-of-jerusalem-in-judaism  /en/sanctification-of-jerusalem-in-judaism.html  200!
 /en/lectures-column  /en/lectures-column.html  200!
 /en/privacy  /en/privacy.html  200!
 /en/accessibility  /en/accessibility.html  200!
