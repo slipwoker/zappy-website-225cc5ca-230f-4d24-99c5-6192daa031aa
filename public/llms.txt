@@ -23,8 +23,8 @@ https://TheJerusalemDream.Co.il/sanctification-of-jerusalem-in-judaism
 ### Page
 https://TheJerusalemDream.Co.il/sanctity-of-jerusalem-in-christianity
 
-### Page
-https://TheJerusalemDream.Co.il/copy
+### התקדשות ירושלים לאיסלאם
+https://TheJerusalemDream.Co.il/jerusalems-sanctification-to-islam
 
 ### Page
 https://TheJerusalemDream.Co.il/menu-group-1789562473499
@@ -73,7 +73,7 @@ Information about WCAG compliance and accessibility features.
   - `email` (email, required)
   - `phone` (tel, required)
   - `message` (textarea, required)
-  - `privacy_consent` (checkbox)
+  - `privacy_consent` (checkbox, required)
 
 ---
 
