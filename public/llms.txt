@@ -21,11 +21,10 @@ https://TheJerusalemDream.Co.il/three-religions
 הצטרפו לסיורי עומק חווייתיים בירושלים, מהעיר העתיקה ועד הר הזיתים. כל מסלול נארג בתשוקה לחשוף רבדים נסתרים של תרבות ואמונה. בואו לחוות את העיר מחדש!
 
 ### Page
-https://TheJerusalemDream.Co.il/menu-group-1783849342215
+https://TheJerusalemDream.Co.il/copy
 
-### התחברו לרגעים מקודשים ולסיפורים נדירים — חלום ירושלים
-https://TheJerusalemDream.Co.il/ceremonies-page
-גלו את עומק המסורת בטקס האפיפאנייה המרגש או בהרצאות מרתקות על קהילת ביתא ישראל. חוויה לימודית ורוחנית המשלבת ידע נדיר עם חיבור אישי. הצטרפו למסע יוצא דופן!
+### Page
+https://TheJerusalemDream.Co.il/menu-group-1783849342215
 
 ### Page
 https://TheJerusalemDream.Co.il/menu-group-1783849107328
@@ -70,11 +69,11 @@ Information about WCAG compliance and accessibility features.
 - Method: POST
 - Content-Type: application/json
 - Fields:
-  - `name` (text, required)
-  - `email` (email, required)
-  - `phone` (tel, required)
-  - `message` (textarea, required)
-  - `privacy_consent` (checkbox, required)
+  - `name` (text)
+  - `email` (email)
+  - `phone` (tel)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox)
 
 ---
 
