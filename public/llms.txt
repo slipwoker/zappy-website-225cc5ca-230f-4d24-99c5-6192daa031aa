@@ -31,6 +31,9 @@ https://TheJerusalemDream.Co.il/menu-group-1789562528830
 https://TheJerusalemDream.Co.il/contact
 מוכנים לצאת להרפתקה תרבותית עמוקה? צרו קשר עוד היום כדי לתכנן סיור מותאם אישית, להזמין הרצאה או להשתתף בטקס ייחודי. אנחנו כאן כדי להגשים את חלום ירושלים שלכם!
 
+### Page
+https://TheJerusalemDream.Co.il/copy
+
 ## Legal & Policy
 
 ### Privacy Policy
@@ -64,7 +67,7 @@ Information about WCAG compliance and accessibility features.
   - `email` (email, required)
   - `phone` (tel, required)
   - `message` (textarea, required)
-  - `privacy_consent` (checkbox)
+  - `privacy_consent` (checkbox, required)
 
 ---
 
