@@ -10,24 +10,12 @@
 https://TheJerusalemDream.Co.il
 צללו לחוויה בלתי נשכחת עם מורה דרך מוסמך בעל ניסיון של 20 שנה. סיורים, טקסים והרצאות שמחברים אתכם לעומק התרבותי של ירושלים. הזמינו את המסע שלכם עוד היום!
 
-### Page
-https://TheJerusalemDream.Co.il/menu-group-1783849504641
-
-### Page
-https://TheJerusalemDream.Co.il/menu-group-1783851951101
-
 ### צעדו בסמטאות העתיקות והרגישו את ההיסטוריה — חלום ירושלים
 https://TheJerusalemDream.Co.il/three-religions
 הצטרפו לסיורי עומק חווייתיים בירושלים, מהעיר העתיקה ועד הר הזיתים. כל מסלול נארג בתשוקה לחשוף רבדים נסתרים של תרבות ואמונה. בואו לחוות את העיר מחדש!
 
 ### Page
 https://TheJerusalemDream.Co.il/copy
-
-### Page
-https://TheJerusalemDream.Co.il/menu-group-1783849342215
-
-### Page
-https://TheJerusalemDream.Co.il/menu-group-1783849107328
 
 ### Page
 https://TheJerusalemDream.Co.il/lectures-column
@@ -69,11 +57,11 @@ Information about WCAG compliance and accessibility features.
 - Method: POST
 - Content-Type: application/json
 - Fields:
-  - `name` (text)
-  - `email` (email)
-  - `phone` (tel)
-  - `message` (textarea)
-  - `privacy_consent` (checkbox)
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel, required)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
 
 ---
 
